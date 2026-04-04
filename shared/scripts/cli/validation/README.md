@@ -1,0 +1,1 @@
+# Validation scripts (Az CLI)

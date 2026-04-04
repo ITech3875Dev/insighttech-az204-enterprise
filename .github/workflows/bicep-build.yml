@@ -1,0 +1,27 @@
+name: bicep-build
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Azure CLI + Bicep
+        run: |
+          curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+          az version
+          az bicep install
+          az bicep version
+      - name: Build all Bicep files
+        run: |
+          set -e
+          files=$(find . -name "*.bicep")
+          if [ -z "$files" ]; then
+            echo "No Bicep files found."
+            exit 0
+          fi
+          for f in $files; do
+            echo "Building: $f"
+            az bicep build --file "$f"
+          done

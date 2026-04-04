@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "displayName": "Require Environment tag on resource groups",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Ensures all resource groups have a non-empty Environment tag.",
+    "metadata": {
+      "category": "Tags"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "allowedValues": [
+          "Audit",
+          "Deny"
+        ],
+        "defaultValue": "Audit",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Audit or Deny the deployment."
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          { "field": "type", "equals": "Microsoft.Resources/subscriptions/resourceGroups" },
+          { "anyOf": [
+            { "field": "tags['Environment']", "exists": "false" },
+            { "field": "tags['Environment']", "equals": "" }
+          ]}
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}

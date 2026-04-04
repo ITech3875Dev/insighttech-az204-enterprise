@@ -1,0 +1,9 @@
+name: ci
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CI is enforced via separate workflows: markdown-lint, bicep-build, secret-scan."

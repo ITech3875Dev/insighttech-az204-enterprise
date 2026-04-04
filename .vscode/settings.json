@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "markdown.preview.fontSize": 14,
+  "powershell.scriptAnalysis.enable": true
+}

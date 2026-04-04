@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+.vscode/*.log
+*.bicep.json
+*.log
+*.pem
+*.pfx
+*.p12
+*.key
+.env
+
+# Instructor-only documentation
+docs/instructor-only/
