@@ -3,9 +3,11 @@
 /shared/ @insighttech-leads
 /docs/program/ @insighttech-leads
 
-/learning-paths/lp01-identity-governance/ @lp01-owner @insighttech-instructors
-/learning-paths/lp02-storage-management/ @lp02-owner @insighttech-instructors
-/learning-paths/lp03-compute-resources/ @lp03-owner @insighttech-instructors
-/learning-paths/lp04-virtual-networks/ @lp04-owner @insighttech-instructors
-/learning-paths/lp05-monitor-backup/ @lp05-owner @insighttech-instructors
+/learning-paths/az204-lp01-develop-azure-compute-solutions/ @lp01-owner @insighttech-instructors
+/learning-paths/az204-lp02-develop-for-azure-storage/ @lp02-owner @insighttech-instructors
+/learning-paths/az204-lp03-implement-azure-security/ @lp03-owner @insighttech-instructors
+/learning-paths/az204-lp04-monitor-troubleshoot-optimize/ @lp04-owner @insighttech-instructors
+/learning-paths/az204-lp05-connect-consume-azure-services/ @lp05-owner @insighttech-instructors
 /learning-paths/lp06-capstone-final-project/ @lp06-owner @insighttech-instructors
+
+

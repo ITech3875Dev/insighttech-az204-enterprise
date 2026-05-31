@@ -4,7 +4,7 @@ This repository is the enterprise training workspace for Microsoft **AZ-204: Dev
 
 ## Program focus
 - App-centric, exam-aligned AZ-204 learning paths
-- Enterprise delivery model carried forward from the AZ-204 program
+- Enterprise delivery model carried forward from the legacy AZ-104 program
 - Repeatable labs with validation, remediation, and instructor-ready guidance
 - Shared templates, scripts, and infrastructure artifacts reused across paths
 
@@ -18,8 +18,11 @@ This repository is the enterprise training workspace for Microsoft **AZ-204: Dev
 See `docs/program/az204-taxonomy.md` for the target domain model and migration mapping.
 
 ## Migration status
-- `az204-lp01-develop-azure-compute-solutions` is scaffolded
-- `az204-lp02-develop-for-azure-storage` is scaffolded
+- `az204-lp01-develop-azure-compute-solutions` is production-ready
+- `az204-lp02-develop-for-azure-storage` is production-ready
+- `az204-lp03-implement-azure-security` is production-ready
+- `az204-lp04-monitor-troubleshoot-optimize` is planned
+- `az204-lp05-connect-consume-azure-services` is planned
 - legacy `lp01-` through `lp06-` folders remain as source material during the AZ-204 conversion
 
 ## Student workflow (high-level)
@@ -38,4 +41,5 @@ See `docs/program/az204-taxonomy.md` for the target domain model and migration m
 - `docs/architecture/` for program architecture and supporting design views
 - `shared/` for reusable templates, scripts, and infrastructure assets
 - `learning-paths/` for active AZ-204 paths and legacy source material under migration
+
 

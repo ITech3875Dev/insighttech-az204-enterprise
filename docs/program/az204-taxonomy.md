@@ -48,7 +48,8 @@ Define the active AZ-204 learning path structure and show how the existing AZ-20
 - Prefer lab flows that validate application behavior, not just resource creation
 
 ## Current Status
-- LP01 is scaffolded
-- LP02 is scaffolded
-- LP03 through LP05 are planned but not yet scaffolded
+- LP01 is production-ready
+- LP02 is production-ready
+- LP03 is production-ready
+- LP04 and LP05 are planned
 

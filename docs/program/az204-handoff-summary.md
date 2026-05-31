@@ -78,13 +78,13 @@ Use this file to continue AZ-204 repo work in a different VS Code window or a fr
 - LP01 validation script: `learning-paths/az204-lp01-develop-azure-compute-solutions/validation/az204-lp01-validate.ps1`
 - LP02 validation script: `learning-paths/az204-lp02-develop-for-azure-storage/validation/az204-lp02-validate.ps1`
 - The playbook `docs/program/playbooks/az204-production-path-template.md` defines the reusable production-ready contract for LP03-LP05.
-- These LP01 and LP02 upgrades are currently local working tree changes and should be committed before treating them as the new branch baseline.
+- LP01 and LP02 production-ready upgrades are committed in branch history and part of the working baseline.
 
 ## Highest-Priority Remaining AZ-204-Oriented Docs
-- `docs/program/curriculum-alignment.md` is still a full AZ-204 curriculum tracker and remains one of the biggest top-level mismatches.
-- `docs/architecture/overall-lab-program-architecture.md` still describes the AZ-204 LP01-LP06 architecture model.
-- `docs/program/enterprise-enhancements-domain1.md` is still AZ-204 domain-specific.
-- `shared/templates/module/README.md` still carries AZ-204 wording, so new content generated from templates will inherit the wrong framing until it is updated.
+- `docs/program/curriculum-alignment.md` was replaced with an AZ-204 curriculum tracker and aligned domain matrix.
+- `docs/architecture/overall-lab-program-architecture.md` was updated to an AZ-204 LP01-LP05 architecture model.
+- `docs/program/enterprise-enhancements-domain1.md` was updated for AZ-204 cross-domain enhancements.
+- `shared/templates/module/README.md` was updated to AZ-204 wording and Python-first module guidance.
 - Legacy `learning-paths/lp01-*` through `lp06-*` remain intentionally as source material and should not be treated as accidental drift.
 
 ## Recommended Next Steps
@@ -98,5 +98,6 @@ Use this file to continue AZ-204 repo work in a different VS Code window or a fr
 4. Use `docs/program/playbooks/az204-production-path-template.md` to productionize `az204-lp03-implement-azure-security` next.
 
 ## Suggested Prompt For New Chat
-Continue AZ-204 repo work from `docs/program/az204-handoff-summary.md`. Assume the repo already has LP01 and LP02 productionized in the working tree, AZ-204 taxonomy defined, `origin` is the AZ-204 fork, `upstream` is the AZ-204 source repo, the current branch head includes commit `5386667`, the reusable productionization blueprint lives at `docs/program/playbooks/az204-production-path-template.md`, and the next likely task is either top-level AZ-204 doc replacement or productionizing LP03 security using the same pattern.
+Continue AZ-204 repo work from `docs/program/az204-handoff-summary.md`. Assume LP01, LP02, and LP03 are production-ready, AZ-204 taxonomy is defined, `origin` is the AZ-204 fork, `upstream` is the AZ-204 source repo, the reusable productionization blueprint lives at `docs/program/playbooks/az204-production-path-template.md`, and the next likely task is productionizing LP04 and LP05 using the same pattern.
+
 
