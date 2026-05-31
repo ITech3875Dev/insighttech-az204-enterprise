@@ -175,7 +175,7 @@ Get-AzStorageFileServiceProperty -ResourceGroupName $ResourceGroupName -StorageA
 ## Task 6 — Run validation (required)
 
 ```powershell
-pwsh learning-paths/lp02-storage-management/modules/m03-files-sync-data-movement/validation/validate.ps1 `
+pwsh learning-paths/az204-lp02-develop-for-azure-storage/modules/m03-files-sync-data-movement/validation/validate.ps1 `
   -StorageAccountName $StorageAccountName
 ```
 
@@ -188,4 +188,5 @@ A passing result confirms the storage account has an active file share with soft
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+
 

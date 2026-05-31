@@ -25,22 +25,23 @@ function Run($path,$args){
   if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 }
 
-Run "learning-paths/lp03-compute-resources/modules/m01-vm-foundations/validation/validate.ps1" @{
+Run "learning-paths/az204-lp03-implement-azure-security/modules/m01-vm-foundations/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; VmName=$VmName
 }
 
-Run "learning-paths/lp03-compute-resources/modules/m02-vm-scale-and-availability/validation/validate.ps1" @{
+Run "learning-paths/az204-lp03-implement-azure-security/modules/m02-vm-scale-and-availability/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; VmssName=$VmssName
 }
 
-Run "learning-paths/lp03-compute-resources/modules/m03-app-service-and-container-services/validation/validate.ps1" @{
+Run "learning-paths/az204-lp03-implement-azure-security/modules/m03-app-service-and-container-services/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; AppServicePlanName=$AppServicePlanName; WebAppName=$WebAppName
 }
 
-Run "learning-paths/lp03-compute-resources/modules/m04-compute-security-and-operations/validation/validate.ps1" @{
+Run "learning-paths/az204-lp03-implement-azure-security/modules/m04-compute-security-and-operations/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; VmName=$VmName
 }
 
 Write-Host "PASS: LP03 validation complete."
 exit 0
+
 

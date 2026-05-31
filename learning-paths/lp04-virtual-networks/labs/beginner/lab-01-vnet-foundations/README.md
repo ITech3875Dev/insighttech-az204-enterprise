@@ -174,7 +174,7 @@ Get-AzVirtualNetwork -ResourceGroupName $ResourceGroupName -Name $VnetName |
 ## Task 6 — Run validation (required)
 
 ```powershell
-pwsh learning-paths/lp04-virtual-networks/modules/m01-vnet-foundations/validation/validate.ps1 `
+pwsh learning-paths/az204-lp04-monitor-troubleshoot-optimize/modules/m01-vnet-foundations/validation/validate.ps1 `
   -VnetName $VnetName
 ```
 
@@ -187,4 +187,5 @@ A passing result confirms the VNet exists with the correct address space and bot
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+
 

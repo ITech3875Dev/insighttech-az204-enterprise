@@ -148,7 +148,7 @@ Get-AzVM -ResourceGroupName $ResourceGroupName -Name $VmName -Status |
 ## Task 5 — Run validation (required)
 
 ```powershell
-pwsh learning-paths/lp03-compute-resources/modules/m01-vm-foundations/validation/validate.ps1 `
+pwsh learning-paths/az204-lp03-implement-azure-security/modules/m01-vm-foundations/validation/validate.ps1 `
   -VmName $VmName
 ```
 
@@ -161,4 +161,5 @@ A passing result confirms the VM exists, is running, and meets the baseline conf
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+
 

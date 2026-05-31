@@ -10,10 +10,11 @@ Deploy a management group hierarchy as code.
 
 ## Steps
 ```bash
-az deployment tenant create   --name "az204-mg-hierarchy"   --location eastus2   --template-file learning-paths/lp01-identity-governance/modules/m02-management-groups-subs/code/bicep/mg-hierarchy.bicep
+az deployment tenant create   --name "az204-mg-hierarchy"   --location eastus2   --template-file learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m02-management-groups-subs/code/bicep/mg-hierarchy.bicep
 ```
 
 ## Evidence
 - Deployment success output
 - Portal screenshot of MG hierarchy (Beginner only)
+
 

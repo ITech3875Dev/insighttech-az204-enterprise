@@ -25,22 +25,23 @@ function Run($path,$args){
   if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 }
 
-Run "learning-paths/lp05-monitor-backup/modules/m01-monitor-foundations/validation/validate.ps1" @{
+Run "learning-paths/az204-lp05-connect-consume-azure-services/modules/m01-monitor-foundations/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; LogAnalyticsWorkspaceName=$LogAnalyticsWorkspaceName
 }
 
-Run "learning-paths/lp05-monitor-backup/modules/m02-alerting-and-log-analytics/validation/validate.ps1" @{
+Run "learning-paths/az204-lp05-connect-consume-azure-services/modules/m02-alerting-and-log-analytics/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; ActionGroupName=$ActionGroupName
 }
 
-Run "learning-paths/lp05-monitor-backup/modules/m03-backup-and-recovery-services/validation/validate.ps1" @{
+Run "learning-paths/az204-lp05-connect-consume-azure-services/modules/m03-backup-and-recovery-services/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; RecoveryVaultName=$RecoveryVaultName
 }
 
-Run "learning-paths/lp05-monitor-backup/modules/m04-monitoring-governance-and-remediation/validation/validate.ps1" @{
+Run "learning-paths/az204-lp05-connect-consume-azure-services/modules/m04-monitoring-governance-and-remediation/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; AlertRuleName=$AlertRuleName
 }
 
 Write-Host "PASS: LP05 validation complete."
 exit 0
+
 

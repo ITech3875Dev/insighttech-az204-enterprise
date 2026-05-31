@@ -159,7 +159,7 @@ New-AzRoleAssignment -ObjectId $GROUP_OBJECT_ID -RoleDefinitionName "Reader" -Sc
 # Task 5 — Run validation (required)
 
 ```powershell
-pwsh -File learning-paths/lp01-identity-governance/modules/m01-users-groups-rbac/validation/validate.ps1 `
+pwsh -File learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m01-users-groups-rbac/validation/validate.ps1 `
   -SubscriptionId $SUBSCRIPTION_ID `
   -ResourceGroupName $RG_NAME `
   -GroupObjectId $GROUP_OBJECT_ID
@@ -169,4 +169,5 @@ pwsh -File learning-paths/lp01-identity-governance/modules/m01-users-groups-rbac
 - PASS: Resource group exists
 - PASS: Required tags present
 - PASS: Reader role assignment present
+
 

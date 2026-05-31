@@ -35,11 +35,11 @@ Define the active AZ-204 learning path structure and show how the existing AZ-20
 
 | Legacy Source Area | Reuse Direction in AZ-204 |
 |---|---|
-| `lp02-storage-management` | storage SDK workflows, data protection scenarios, lifecycle and access patterns |
-| `lp03-compute-resources` | App Service and compute deployment mechanics |
-| `lp05-monitor-backup` | monitoring, alerting, diagnostics, remediation workflows |
-| `lp01-identity-governance` | identity and RBAC concepts adapted to app authentication and managed identity |
-| `lp04-virtual-networks` | service connectivity, private endpoints, network troubleshooting where app-relevant |
+| `az204-lp02-develop-for-azure-storage` | storage SDK workflows, data protection scenarios, lifecycle and access patterns |
+| `az204-lp03-implement-azure-security` | App Service and compute deployment mechanics |
+| `az204-lp05-connect-consume-azure-services` | monitoring, alerting, diagnostics, remediation workflows |
+| `az204-lp01-develop-azure-compute-solutions` | identity and RBAC concepts adapted to app authentication and managed identity |
+| `az204-lp04-monitor-troubleshoot-optimize` | service connectivity, private endpoints, network troubleshooting where app-relevant |
 
 ## Migration Rules
 - Treat the AZ-204 folders as source material, not as the final AZ-204 taxonomy
@@ -52,4 +52,5 @@ Define the active AZ-204 learning path structure and show how the existing AZ-20
 - LP02 is production-ready
 - LP03 is production-ready
 - LP04 and LP05 are planned
+
 

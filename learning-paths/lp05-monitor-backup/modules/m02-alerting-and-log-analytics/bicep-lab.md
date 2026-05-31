@@ -10,11 +10,12 @@ Deploy blob service data protection settings for an existing storage account.
 ```bash
 az deployment group create \
 	--resource-group rg-az204-storage-dev-eastus2-01 \
-	--template-file learning-paths/lp05-monitor-backup/modules/m02-alerting-and-log-analytics/code/main.bicep \
+	--template-file learning-paths/az204-lp05-connect-consume-azure-services/modules/m02-alerting-and-log-analytics/code/main.bicep \
 	--parameters storageAccountName=<storage-account-name> location=eastus2 blobDeleteRetentionDays=14
 ```
 
 ## Evidence
 - Deployment success output.
 - Blob service properties output showing versioning and delete retention enabled.
+
 

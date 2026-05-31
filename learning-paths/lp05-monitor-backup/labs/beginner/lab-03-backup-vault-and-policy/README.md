@@ -214,7 +214,7 @@ Get-AzRecoveryServicesBackupItem -BackupManagementType AzureVM -WorkloadType Azu
 ## Task 7 — Run validation (required)
 
 ```powershell
-pwsh learning-paths/lp05-monitor-backup/modules/m03-backup-and-recovery-services/validation/validate.ps1 `
+pwsh learning-paths/az204-lp05-connect-consume-azure-services/modules/m03-backup-and-recovery-services/validation/validate.ps1 `
   -RecoveryVaultName $VaultName
 ```
 
@@ -239,4 +239,5 @@ az backup protection disable \
 
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+
 

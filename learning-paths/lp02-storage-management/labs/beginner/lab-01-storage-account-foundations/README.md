@@ -157,7 +157,7 @@ Expected: SKU = `Standard_LRS`, Kind = `StorageV2`, AccessTier = `Hot`.
 ## Task 5 - Run validation (required)
 
 ```powershell
-pwsh -File learning-paths/lp02-storage-management/modules/m01-storage-accounts/validation/validate.ps1 `
+pwsh -File learning-paths/az204-lp02-develop-for-azure-storage/modules/m01-storage-accounts/validation/validate.ps1 `
   -SubscriptionId $SubscriptionId `
   -ResourceGroupName $ResourceGroupName `
   -StorageAccountName $StorageAccountName
@@ -171,4 +171,5 @@ Expected:
 - PASS: HTTPS-only enabled
 - PASS: Minimum TLS is TLS1_2
 - PASS: Blob public access disabled
+
 

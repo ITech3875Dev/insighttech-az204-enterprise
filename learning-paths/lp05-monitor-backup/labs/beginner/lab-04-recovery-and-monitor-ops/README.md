@@ -13,8 +13,9 @@
 $SUBSCRIPTION_ID="<your-subscription-id>"
 $BUDGET_NAME="az204-lab-budget"
 
-pwsh -File learning-paths/lp05-monitor-backup/modules/m04-cost-advisor-governance/validation/validate.ps1 `
+pwsh -File learning-paths/az204-lp05-connect-consume-azure-services/modules/m04-cost-advisor-governance/validation/validate.ps1 `
   -SubscriptionId $SUBSCRIPTION_ID `
   -BudgetName $BUDGET_NAME
 ```
+
 

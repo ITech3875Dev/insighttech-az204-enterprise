@@ -91,6 +91,7 @@ az monitor autoscale list -g "$RG_NAME" -o table
 ## Validation
 
 ```powershell
-pwsh -File learning-paths/lp03-compute-resources/modules/m02-vm-scale-and-availability/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -VmssName $VmssName
+pwsh -File learning-paths/az204-lp03-implement-azure-security/modules/m02-vm-scale-and-availability/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -VmssName $VmssName
 ```
+
 

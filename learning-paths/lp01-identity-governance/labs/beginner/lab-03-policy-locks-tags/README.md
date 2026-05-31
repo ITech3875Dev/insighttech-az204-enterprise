@@ -14,8 +14,9 @@ Run:
 $SUBSCRIPTION_ID="<your-subscription-id>"
 $RG_NAME="rg-az204-idgov-dev-eastus2-01"
 
-pwsh -File learning-paths/lp01-identity-governance/modules/m03-policy-locks-tags/validation/validate.ps1 `
+pwsh -File learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m03-policy-locks-tags/validation/validate.ps1 `
   -SubscriptionId $SUBSCRIPTION_ID `
   -ResourceGroupName $RG_NAME
 ```
+
 

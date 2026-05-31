@@ -73,9 +73,10 @@ New-AzRoleAssignment -ObjectId $GROUP_OBJECT_ID -RoleDefinitionName "Reader" -Sc
 
 ## Validation
 ```powershell
-pwsh -File learning-paths/lp01-identity-governance/modules/m02-management-groups-subs/validation/validate.ps1 `
+pwsh -File learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m02-management-groups-subs/validation/validate.ps1 `
   -SubscriptionId $SUBSCRIPTION_ID `
   -WorkloadsManagementGroupName $MG_WORKLOADS `
   -GroupObjectId $GROUP_OBJECT_ID
 ```
+
 

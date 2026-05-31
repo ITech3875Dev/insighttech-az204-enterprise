@@ -5,7 +5,7 @@
 az deployment group create \
 	--resource-group rg-az204-storage-dev-eastus2-01 \
 	--name m01-storage-baseline \
-	--template-file learning-paths/lp02-storage-management/modules/m01-storage-accounts/code/bicep/rg-and-rbac.bicep \
+	--template-file learning-paths/az204-lp02-develop-for-azure-storage/modules/m01-storage-accounts/code/bicep/rg-and-rbac.bicep \
 	--parameters storageAccountName="staz204m01<unique>" location="eastus2"
 ```
 
@@ -13,4 +13,5 @@ az deployment group create \
 ```bash
 az deployment group show -g rg-az204-storage-dev-eastus2-01 -n m01-storage-baseline -o jsonc
 ```
+
 

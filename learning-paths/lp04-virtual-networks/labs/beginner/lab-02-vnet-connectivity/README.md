@@ -78,6 +78,7 @@ az network route-table show -g "$RG_NAME" -n "$ROUTE_TABLE" --query "routes[].{n
 ## Validation
 
 ```powershell
-pwsh -File learning-paths/lp04-virtual-networks/modules/m02-connectivity-and-routing/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -RouteTableName $RouteTableName
+pwsh -File learning-paths/az204-lp04-monitor-troubleshoot-optimize/modules/m02-connectivity-and-routing/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -RouteTableName $RouteTableName
 ```
+
 

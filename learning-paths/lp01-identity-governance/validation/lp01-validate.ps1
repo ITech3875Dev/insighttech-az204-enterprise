@@ -22,22 +22,23 @@ function Run($path,$args){
   if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 }
 
-Run "learning-paths/lp01-identity-governance/modules/m01-users-groups-rbac/validation/validate.ps1" @{
+Run "learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m01-users-groups-rbac/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; GroupObjectId=$GroupObjectId
 }
 
-Run "learning-paths/lp01-identity-governance/modules/m02-management-groups-subs/validation/validate.ps1" @{
+Run "learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m02-management-groups-subs/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; WorkloadsManagementGroupName=$WorkloadsManagementGroupName; GroupObjectId=$GroupObjectId
 }
 
-Run "learning-paths/lp01-identity-governance/modules/m03-policy-locks-tags/validation/validate.ps1" @{
+Run "learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m03-policy-locks-tags/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName
 }
 
-Run "learning-paths/lp01-identity-governance/modules/m04-cost-advisor-governance/validation/validate.ps1" @{
+Run "learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m04-cost-advisor-governance/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; BudgetName=$BudgetName
 }
 
 Write-Host "PASS: LP01 validation complete."
 exit 0
+
 

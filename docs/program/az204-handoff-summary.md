@@ -85,7 +85,7 @@ Use this file to continue AZ-204 repo work in a different VS Code window or a fr
 - `docs/architecture/overall-lab-program-architecture.md` was updated to an AZ-204 LP01-LP05 architecture model.
 - `docs/program/enterprise-enhancements-domain1.md` was updated for AZ-204 cross-domain enhancements.
 - `shared/templates/module/README.md` was updated to AZ-204 wording and Python-first module guidance.
-- Legacy `learning-paths/lp01-*` through `lp06-*` remain intentionally as source material and should not be treated as accidental drift.
+- Legacy source folders remain intentionally as migration source material and should not be treated as accidental drift.
 
 ## Recommended Next Steps
 1. Open a pull request for `feature/az204-taxonomy-lp02` if it has not been merged yet.

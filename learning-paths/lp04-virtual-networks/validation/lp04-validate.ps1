@@ -25,22 +25,23 @@ function Run($path,$args){
   if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 }
 
-Run "learning-paths/lp04-virtual-networks/modules/m01-vnet-foundations/validation/validate.ps1" @{
+Run "learning-paths/az204-lp04-monitor-troubleshoot-optimize/modules/m01-vnet-foundations/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; VnetName=$VnetName
 }
 
-Run "learning-paths/lp04-virtual-networks/modules/m02-connectivity-and-routing/validation/validate.ps1" @{
+Run "learning-paths/az204-lp04-monitor-troubleshoot-optimize/modules/m02-connectivity-and-routing/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; RouteTableName=$RouteTableName
 }
 
-Run "learning-paths/lp04-virtual-networks/modules/m03-load-balancing-and-name-resolution/validation/validate.ps1" @{
+Run "learning-paths/az204-lp04-monitor-troubleshoot-optimize/modules/m03-load-balancing-and-name-resolution/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; LoadBalancerName=$LoadBalancerName
 }
 
-Run "learning-paths/lp04-virtual-networks/modules/m04-network-security-and-troubleshooting/validation/validate.ps1" @{
+Run "learning-paths/az204-lp04-monitor-troubleshoot-optimize/modules/m04-network-security-and-troubleshooting/validation/validate.ps1" @{
   SubscriptionId=$SubscriptionId; ResourceGroupName=$ResourceGroupName; NsgName=$NsgName
 }
 
 Write-Host "PASS: LP04 validation complete."
 exit 0
+
 

@@ -4,7 +4,7 @@ This repository is the enterprise training workspace for Microsoft **AZ-204: Dev
 
 ## Program focus
 - App-centric, exam-aligned AZ-204 learning paths
-- Enterprise delivery model carried forward from the legacy AZ-104 program
+- Enterprise delivery model carried forward from the legacy administrator training program
 - Repeatable labs with validation, remediation, and instructor-ready guidance
 - Shared templates, scripts, and infrastructure artifacts reused across paths
 
@@ -41,5 +41,6 @@ See `docs/program/az204-taxonomy.md` for the target domain model and migration m
 - `docs/architecture/` for program architecture and supporting design views
 - `shared/` for reusable templates, scripts, and infrastructure assets
 - `learning-paths/` for active AZ-204 paths and legacy source material under migration
+
 
 

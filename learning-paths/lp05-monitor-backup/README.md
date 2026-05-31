@@ -44,4 +44,5 @@ Advanced:
 - M01-M04 content published and validated in-repo
 - Beginner/intermediate/advanced labs published with ongoing quality hardening
 - Practice exam and answer key published; instructor notes iterating
-- Enterprise landing zone capstone moved to LP06 (`learning-paths/lp06-capstone-final-project`)
+- Enterprise landing zone capstone moved to LP06 (`learning-paths/az204-lp05-connect-consume-azure-services`)
+

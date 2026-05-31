@@ -223,7 +223,7 @@ Get-AzLoadBalancer -ResourceGroupName $ResourceGroupName -Name $LbName |
 ## Task 6 — Run validation (required)
 
 ```powershell
-pwsh learning-paths/lp04-virtual-networks/modules/m03-load-balancing-and-name-resolution/validation/validate.ps1 `
+pwsh learning-paths/az204-lp04-monitor-troubleshoot-optimize/modules/m03-load-balancing-and-name-resolution/validation/validate.ps1 `
   -LoadBalancerName $LbName
 ```
 
@@ -236,4 +236,5 @@ A passing result confirms the load balancer exists with a Standard SKU, a config
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+
 

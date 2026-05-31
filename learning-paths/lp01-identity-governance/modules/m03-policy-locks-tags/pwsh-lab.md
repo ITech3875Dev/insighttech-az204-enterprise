@@ -14,7 +14,7 @@ $Effect="Audit"   # change to Deny for enforcement test in TEST scope
 Connect-AzAccount
 Set-AzContext -Subscription $SUBSCRIPTION_ID
 
-$rulesPath = "learning-paths/lp01-identity-governance/modules/m03-policy-locks-tags/code/policy/require-environment-tag.json"
+$rulesPath = "learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m03-policy-locks-tags/code/policy/require-environment-tag.json"
 $rulesJson = Get-Content $rulesPath -Raw | ConvertFrom-Json
 
 New-AzPolicyDefinition -Name $PolicyName -Policy $rulesJson.properties.policyRule -Parameter $rulesJson.properties.parameters -Mode All `
@@ -45,4 +45,5 @@ Get-AzResourceLock -ResourceGroupName $RG | Select Name, LockLevel
 ```powershell
 pwsh -File shared/scripts/pwsh/validation/tag-compliance-report.ps1 -SubscriptionId $SUBSCRIPTION_ID -OutputFolder "./out"
 ```
+
 

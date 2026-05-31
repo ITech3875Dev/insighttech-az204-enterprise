@@ -179,7 +179,7 @@ az monitor diagnostic-settings list \
 ## Task 6 — Run validation (required)
 
 ```powershell
-pwsh learning-paths/lp05-monitor-backup/modules/m01-monitor-foundations/validation/validate.ps1 `
+pwsh learning-paths/az204-lp05-connect-consume-azure-services/modules/m01-monitor-foundations/validation/validate.ps1 `
   -LogAnalyticsWorkspaceName $WorkspaceName
 ```
 
@@ -192,4 +192,5 @@ A passing result confirms the workspace exists with the correct SKU, retention p
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+
 

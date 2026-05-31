@@ -130,7 +130,7 @@ Updated after each LP release and following any Microsoft exam refresh.
 |---------------|-------------|---------|
 | AZ-900 (Fundamentals) | None | Pre-req or equivalent experience |
 | **AZ-204 (Developer Associate)** | AZ-900 or equivalent | **TARGET** — 100% |
-| AZ-400 (DevOps Engineer Expert) | AZ-204 + AZ-104 | High overlap: CI/CD, security |
+| AZ-400 (DevOps Engineer Expert) | AZ-204 + Azure platform administration experience | High overlap: CI/CD, security |
 | AZ-305 (Solutions Architect Expert) | AZ-204 recommended | High overlap: architecture patterns |
 
 ---
@@ -148,5 +148,6 @@ Updated after each LP release and following any Microsoft exam refresh.
 
 **Last Updated**: 2026  
 **Next Review**: After LP04 delivery
+
 
 

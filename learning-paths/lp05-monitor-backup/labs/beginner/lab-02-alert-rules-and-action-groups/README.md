@@ -65,6 +65,7 @@ az monitor metrics alert show -g "$RG_NAME" -n "$ALERT_RULE_NAME" -o json
 
 ## Validation
 ```powershell
-pwsh -File learning-paths/lp05-monitor-backup/modules/m02-alerting-and-log-analytics/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -ActionGroupName $ActionGroupName
+pwsh -File learning-paths/az204-lp05-connect-consume-azure-services/modules/m02-alerting-and-log-analytics/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -ActionGroupName $ActionGroupName
 ```
+
 

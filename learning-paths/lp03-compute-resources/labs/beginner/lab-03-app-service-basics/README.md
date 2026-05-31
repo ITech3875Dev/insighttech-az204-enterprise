@@ -192,7 +192,7 @@ Get-AzWebApp -ResourceGroupName $ResourceGroupName -Name $WebAppName |
 ## Task 7 — Run validation (required)
 
 ```powershell
-pwsh learning-paths/lp03-compute-resources/modules/m03-app-service-and-container-services/validation/validate.ps1 `
+pwsh learning-paths/az204-lp03-implement-azure-security/modules/m03-app-service-and-container-services/validation/validate.ps1 `
   -AppServicePlanName $PlanName `
   -WebAppName $WebAppName
 ```
@@ -206,4 +206,5 @@ A passing result confirms the App Service plan and web app exist with the correc
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+
 

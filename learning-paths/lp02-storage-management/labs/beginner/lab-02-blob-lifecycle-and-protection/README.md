@@ -146,6 +146,7 @@ az storage account management-policy show --account-name "$STORAGE_ACCOUNT" --re
 ## Validation
 
 ```powershell
-pwsh -File learning-paths/lp02-storage-management/modules/m02-blob-services-data-protection/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -StorageAccountName $StorageAccountName
+pwsh -File learning-paths/az204-lp02-develop-for-azure-storage/modules/m02-blob-services-data-protection/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -StorageAccountName $StorageAccountName
 ```
+
 

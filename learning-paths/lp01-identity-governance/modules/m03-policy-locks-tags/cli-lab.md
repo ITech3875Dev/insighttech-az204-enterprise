@@ -15,7 +15,7 @@ export EFFECT="Audit"   # change to Deny for enforcement test in a TEST scope
 az login
 az account set --subscription "$SUBSCRIPTION_ID"
 
-az policy definition create   --name "$POLICY_NAME"   --rules "learning-paths/lp01-identity-governance/modules/m03-policy-locks-tags/code/policy/require-environment-tag.json"   --mode All
+az policy definition create   --name "$POLICY_NAME"   --rules "learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m03-policy-locks-tags/code/policy/require-environment-tag.json"   --mode All
 ```
 
 ## 2) Assign policy at subscription scope (Audit)
@@ -25,7 +25,7 @@ az policy assignment create   --name "$ASSIGN_NAME"   --policy "$POLICY_NAME"   
 
 ## 3) Assign allowed locations built-in policy
 ```bash
-az policy assignment create   --name "assign-allowed-locations"   --policy "e56962a6-4747-49cd-b67b-bf8b01975c4c"   --scope "/subscriptions/$SUBSCRIPTION_ID"   --params @learning-paths/lp01-identity-governance/modules/m03-policy-locks-tags/code/policy/allowed-locations-parameters.json
+az policy assignment create   --name "assign-allowed-locations"   --policy "e56962a6-4747-49cd-b67b-bf8b01975c4c"   --scope "/subscriptions/$SUBSCRIPTION_ID"   --params @learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m03-policy-locks-tags/code/policy/allowed-locations-parameters.json
 ```
 
 ## 4) Create CanNotDelete lock on RG
@@ -44,4 +44,5 @@ az lock list --resource-group "$RG" -o table
 chmod +x shared/scripts/cli/validation/tag-compliance-report.sh
 shared/scripts/cli/validation/tag-compliance-report.sh "$SUBSCRIPTION_ID" "./out"
 ```
+
 

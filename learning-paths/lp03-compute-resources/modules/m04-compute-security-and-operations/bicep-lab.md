@@ -10,7 +10,7 @@ Deploy storage account security baseline configuration as code.
 ```bash
 az deployment group create \
 	--resource-group rg-az204-storage-dev-eastus2-01 \
-	--template-file learning-paths/lp03-compute-resources/modules/m04-compute-security-and-operations/code/main.bicep \
+	--template-file learning-paths/az204-lp03-implement-azure-security/modules/m04-compute-security-and-operations/code/main.bicep \
 	--parameters storageAccountName=<storage-account-name> allowBlobPublicAccess=false minTlsVersion=TLS1_2
 ```
 
@@ -21,4 +21,5 @@ az storage account show \
 	--resource-group rg-az204-storage-dev-eastus2-01 \
 	--query "{httpsOnly:httpsTrafficOnly,minTls:minTlsVersion,publicAccess:allowBlobPublicAccess}"
 ```
+
 

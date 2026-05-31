@@ -11,6 +11,7 @@ Deploy policy assignments and a lock via Bicep/ARM-compatible resources.
 ## Deploy
 ```bash
 az account set --subscription <subId>
-az deployment sub create   --name "az204-policy-locks"   --location eastus2   --template-file learning-paths/lp01-identity-governance/modules/m03-policy-locks-tags/code/bicep/policy-and-locks.bicep   --parameters rgName="rg-az204-idgov-dev-eastus2-01"
+az deployment sub create   --name "az204-policy-locks"   --location eastus2   --template-file learning-paths/az204-lp01-develop-azure-compute-solutions/modules/m03-policy-locks-tags/code/bicep/policy-and-locks.bicep   --parameters rgName="rg-az204-idgov-dev-eastus2-01"
 ```
+
 
