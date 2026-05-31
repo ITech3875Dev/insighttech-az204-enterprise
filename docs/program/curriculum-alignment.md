@@ -1,153 +1,89 @@
-# Curriculum Alignment Tracker — AZ-204 (2026)
+# Curriculum Alignment Tracker - AZ-204 (2026)
 
 ## Purpose
-This document tracks how the InSight Technologies AZ-204 training aligns with the current Microsoft exam.
-Updated after each LP release and following any Microsoft exam refresh.
-
----
+Track how the InSight Technologies AZ-204 curriculum aligns to Microsoft exam skills using the canonical 11-path model.
 
 ## AZ-204 Exam Composition
 
-| Domain | Weight | LP Coverage |
-|--------|--------|-------------|
-| Develop Azure compute solutions | ~25% | LP01 (App Service, Azure Functions) |
-| Develop for Azure storage | ~15% | LP02 (Blob Storage, Cosmos DB) |
-| Implement Azure security | ~20% | LP03 (Key Vault, managed identity, MSAL, SAS) |
-| Monitor, troubleshoot, and optimize Azure solutions | ~15% | LP04 (App Insights, Log Analytics, caching) |
-| Connect to and consume Azure services and third-party services | ~15% | LP05 (API Management, Service Bus, Event Grid) |
+| Domain | Weight | Canonical LP Coverage |
+|--------|--------|-----------------------|
+| Develop Azure compute solutions | ~25% | LP01, LP02, LP05 |
+| Develop for Azure storage | ~15% | LP03, LP04 |
+| Implement Azure security | ~20% | LP06, LP07 |
+| Monitor, troubleshoot, and optimize Azure solutions | ~15% | LP11 |
+| Connect to and consume Azure services and third-party services | ~15% | LP08, LP09, LP10 |
 
-> Note: Exam weights are approximate and subject to Microsoft refresh cycles.
-> Always verify against the latest study guide: https://aka.ms/AZ204-StudyGuide
+> Note: Exam weights are approximate and can change. Always verify against the latest Microsoft study guide.
 
----
+## Canonical LP Coverage Matrix
 
-## LP Coverage Matrix
+| Learning Path | Folder | Primary Domain | Status |
+|---------------|--------|----------------|--------|
+| LP01 - Implement Azure App Service web apps | `learning-paths/az204-lp01-implement-app-service-web-apps` | Compute | In progress |
+| LP02 - Implement Azure Functions | `learning-paths/az204-lp02-implement-azure-functions` | Compute | In progress |
+| LP03 - Develop solutions that use Blob storage | `learning-paths/az204-lp03-develop-solutions-blob-storage` | Storage | In progress |
+| LP04 - Develop solutions that use Azure Cosmos DB | `learning-paths/az204-lp04-develop-solutions-cosmos-db` | Storage | Planned |
+| LP05 - Implement containerized solutions | `learning-paths/az204-lp05-implement-containerized-solutions` | Compute | Planned |
+| LP06 - Implement user authentication and authorization | `learning-paths/az204-lp06-implement-user-authentication-authorization` | Security | In progress |
+| LP07 - Implement secure Azure solutions | `learning-paths/az204-lp07-implement-secure-azure-solutions` | Security | In progress |
+| LP08 - Implement API Management | `learning-paths/az204-lp08-implement-api-management` | Connect/Consume | Planned |
+| LP09 - Develop event-based solutions | `learning-paths/az204-lp09-develop-event-based-solutions` | Connect/Consume | Planned |
+| LP10 - Develop message-based solutions | `learning-paths/az204-lp10-develop-message-based-solutions` | Connect/Consume | Planned |
+| LP11 - Troubleshoot solutions by using Application Insights | `learning-paths/az204-lp11-troubleshoot-solutions-application-insights` | Monitor/Troubleshoot | Planned |
 
-| Learning Path | Exam Domain | Modules | Status |
-|---------------|-------------|---------|--------|
-| LP01 — Develop Azure Compute Solutions | Compute (~25%) | App Service, Azure Functions | ✅ Production-ready |
-| LP02 — Develop for Azure Storage | Storage (~15%) | Blob SDK, Cosmos DB | ✅ Production-ready |
-| LP03 — Implement Azure Security | Security (~20%) | Authentication & Authorization, Key Vault & Managed Identity | ✅ Production-ready |
-| LP04 — Monitor and Optimize | Monitor (~15%) | Application Insights, caching & CDN | ⏳ Planned |
-| LP05 — Connect and Consume Services | Connect/Consume (~15%) | API Management, messaging (Service Bus, Event Grid) | ⏳ Planned |
+## Domain-to-LP Skill Mapping
 
----
-
-## Detailed Coverage — LP01 (Compute)
-
-| Exam Skill | InSight Coverage | Evidence |
-|------------|-----------------|----------|
-| Create Azure App Service web apps | M01: App Service | Beginner + Intermediate labs |
-| Enable diagnostics logging | M01: App Service | Advanced lab |
-| Deploy code to a web app | M01: App Service | Deployment slots lab |
-| Configure web app settings | M01: App Service | All lab tiers |
-| Implement Azure Functions | M01: Azure Functions | Function trigger labs |
-| Implement input and output bindings | M01: Azure Functions | Intermediate lab |
-| Implement durable functions | M01: Azure Functions | Advanced lab |
-
----
-
-## Detailed Coverage — LP02 (Storage)
-
-| Exam Skill | InSight Coverage | Evidence |
-|------------|-----------------|----------|
-| Move items in Blob Storage between containers | M01: Blob Storage | Beginner lab |
-| Set and retrieve properties and metadata | M01: Blob Storage | Intermediate lab |
-| Perform operations on data by using appropriate SDK | M01: Blob Storage | All lab tiers |
-| Create a Cosmos DB database | M02: Cosmos DB | Beginner lab |
-| Implement time-to-live (TTL) for data | M02: Cosmos DB | Intermediate lab |
-| Write stored procedures, triggers, UDFs | M02: Cosmos DB | Advanced lab |
-
----
-
-## Detailed Coverage — LP03 (Security)
-
-| Exam Skill | InSight Coverage | Evidence |
-|------------|-----------------|----------|
-| Implement user authentication and authorization (MSAL, Microsoft Identity Platform) | M01: Authentication & Authorization | Advanced lab, masterclass |
-| Implement delegated permissions | M01: Authentication & Authorization | Advanced lab |
-| Create and implement shared access signatures | M01: Authentication & Authorization | Advanced + capstone lab |
-| Implement solutions that interact with Microsoft Graph | M01: Authentication & Authorization | Advanced lab extension |
-| Implement managed identities for Azure resources | M02: Key Vault & Managed Identity | Intermediate + capstone lab |
-| Set and retrieve a secret from Azure Key Vault | M02: Key Vault & Managed Identity | Beginner + capstone lab |
-| Configure and implement Key Vault (RBAC, purge protection, rotation) | M02: Key Vault & Managed Identity | All lab tiers |
-| Implement App Configuration references to Key Vault | M02: Key Vault & Managed Identity | Capstone lab |
-
----
+| Skill Area | Canonical LP |
+|------------|--------------|
+| App Service app deployment and configuration | LP01 |
+| Function triggers, bindings, and durable workflows | LP02 |
+| Blob SDK operations and lifecycle patterns | LP03 |
+| Cosmos DB data modeling and SDK access patterns | LP04 |
+| Container Apps and container lifecycle workflows | LP05 |
+| Identity platform, OAuth, and app authorization | LP06 |
+| Managed identity, Key Vault, and secure configuration | LP07 |
+| API gateway policy and API lifecycle controls | LP08 |
+| Event Grid publish/subscribe integration | LP09 |
+| Service Bus and queue/topic processing | LP10 |
+| Application Insights diagnostics and telemetry troubleshooting | LP11 |
 
 ## Coverage Gaps and Roadmap
 
-### 🔴 Not Yet Delivered
-
 | Gap | Domain | Target LP |
 |-----|--------|-----------|
-| Application Insights SDK integration | Monitor | LP04 |
-| Log Analytics KQL queries | Monitor | LP04 |
-| Redis Cache (Azure Cache for Redis) | Monitor/Optimize | LP04 |
-| Azure CDN configuration | Monitor/Optimize | LP04 |
-| API Management policies | Connect/Consume | LP05 |
-| Service Bus queues and topics | Connect/Consume | LP05 |
-| Event Grid routing and filtering | Connect/Consume | LP05 |
-| Webhook and notification hub integration | Connect/Consume | LP05 |
-
-### 🟢 Covered — No Gaps
-
-- ✅ App Service deployment and configuration
-- ✅ Azure Functions (all trigger types, durable functions)
-- ✅ Blob Storage SDK operations
-- ✅ Cosmos DB data access patterns
-- ✅ Microsoft Identity Platform (OAuth 2.0, MSAL)
-- ✅ Key Vault (RBAC auth, soft-delete, purge protection, SDK)
-- ✅ Managed identity (system + user-assigned, ACI)
-- ✅ Shared Access Signatures (account, service, stored policy)
-- ✅ App Configuration Key Vault references
-
----
+| Cosmos DB advanced data access labs | Storage | LP04 |
+| Container deployment hardening labs | Compute | LP05 |
+| API Management policy labs | Connect/Consume | LP08 |
+| Event routing and filter labs | Connect/Consume | LP09 |
+| Service Bus reliability labs | Connect/Consume | LP10 |
+| End-to-end observability and incident workflows | Monitor/Troubleshoot | LP11 |
 
 ## Student Pass Rate Tracking
 
-| Cohort | Start Date | Students | LP Completion ≥70% | Attempted AZ-204 | Pass Rate | Notes |
-|--------|-----------|----------|--------------------|-----------------|-----------|-------|
+| Cohort | Start Date | Students | LP Completion >=70% | Attempted AZ-204 | Pass Rate | Notes |
+|--------|-----------|----------|---------------------|------------------|-----------|-------|
 | Cohort 1 | 2026 | TBD | TBD | TBD | TBD | Program launch |
-| **Target** | — | — | ≥85% | — | ≥85% | |
+| Target | - | - | >=85% | - | >=85% | |
 
----
-
-## Scoring Bands (All LPs)
+## Scoring Bands
 
 | Score | Band | Recommendation |
 |-------|------|----------------|
-| 90–100% | Mastery | Ready for exam |
-| 76–89% | Proficient | Review missed areas; re-run validation |
-| 70–75% | Passing | Retake relevant module before exam |
-| <70% | Needs Work | Full LP review required |
-
----
-
-## AZ-204 Certification Progression
-
-| Certification | Prerequisite | Overlap |
-|---------------|-------------|---------|
-| AZ-900 (Fundamentals) | None | Pre-req or equivalent experience |
-| **AZ-204 (Developer Associate)** | AZ-900 or equivalent | **TARGET** — 100% |
-| AZ-400 (DevOps Engineer Expert) | AZ-204 + Azure platform administration experience | High overlap: CI/CD, security |
-| AZ-305 (Solutions Architect Expert) | AZ-204 recommended | High overlap: architecture patterns |
-
----
+| 90-100% | Mastery | Ready for exam |
+| 76-89% | Proficient | Review misses and rerun validation |
+| 70-75% | Passing | Retake weak modules before exam |
+| <70% | Needs Work | Full LP remediation required |
 
 ## Related Resources
 
-- **AZ-204 Study Guide**: https://aka.ms/AZ204-StudyGuide
-- **AZ-204 Learning Path (MS Learn)**: https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/
-- **Practice Assessment**: https://learn.microsoft.com/credentials/certifications/azure-developer/practice/
-- [Standards and Guardrails](standards-and-guardrails.md)
-- [Grading Rubrics](grading-rubrics.md)
-- [Cohort Guide](cohort-guide.md)
+- AZ-204 Study Guide: https://aka.ms/AZ204-StudyGuide
+- AZ-204 Practice Assessment: https://learn.microsoft.com/credentials/certifications/azure-developer/practice/
+- `docs/program/az204-taxonomy.md`
+- `docs/program/curriculum-matrix.md`
+- `docs/program/standards-and-guardrails.md`
 
----
-
-**Last Updated**: 2026  
-**Next Review**: After LP04 delivery
+Last Updated: 2026
+Next Review: After LP11 baseline delivery
 
 
 

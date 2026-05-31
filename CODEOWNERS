@@ -2,13 +2,19 @@
 
 /shared/ @insighttech-leads
 /docs/program/ @insighttech-leads
+/docs/architecture/ @insighttech-leads
 
-/learning-paths/az204-lp01-develop-azure-compute-solutions/ @lp01-owner @insighttech-instructors
-/learning-paths/az204-lp02-develop-for-azure-storage/ @lp02-owner @insighttech-instructors
-/learning-paths/az204-lp03-implement-azure-security/ @lp03-owner @insighttech-instructors
-/learning-paths/az204-lp04-monitor-troubleshoot-optimize/ @lp04-owner @insighttech-instructors
-/learning-paths/az204-lp05-connect-consume-azure-services/ @lp05-owner @insighttech-instructors
-/learning-paths/legacy-az104/lp06-capstone-final-project/ @lp06-owner @insighttech-instructors
+/learning-paths/az204-lp01-implement-app-service-web-apps/ @insighttech-instructors
+/learning-paths/az204-lp02-implement-azure-functions/ @insighttech-instructors
+/learning-paths/az204-lp03-develop-solutions-blob-storage/ @insighttech-instructors
+/learning-paths/az204-lp04-develop-solutions-cosmos-db/ @insighttech-instructors
+/learning-paths/az204-lp05-implement-containerized-solutions/ @insighttech-instructors
+/learning-paths/az204-lp06-implement-user-authentication-authorization/ @insighttech-instructors
+/learning-paths/az204-lp07-implement-secure-azure-solutions/ @insighttech-instructors
+/learning-paths/az204-lp08-implement-api-management/ @insighttech-instructors
+/learning-paths/az204-lp09-develop-event-based-solutions/ @insighttech-instructors
+/learning-paths/az204-lp10-develop-message-based-solutions/ @insighttech-instructors
+/learning-paths/az204-lp11-troubleshoot-solutions-application-insights/ @insighttech-instructors
 
-
-
+/learning-paths/legacy-az104/ @insighttech-instructors
+/learning-paths/legacy-az204-broad/ @insighttech-instructors

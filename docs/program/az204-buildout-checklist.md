@@ -1,7 +1,7 @@
 # AZ-204 Build-Out Checklist
 
 ## Goal
-Build a complete AZ-204 training repo using the same delivery model and quality bar as AZ-204.
+Build a complete AZ-204 training repo using the canonical LP01-LP11 delivery model and production quality bar.
 
 ## Working Model
 - Branch from `develop` into focused feature branches.
@@ -58,6 +58,12 @@ Build a complete AZ-204 training repo using the same delivery model and quality 
 - `feature/az204-lp03-*`
 - `feature/az204-lp04-*`
 - `feature/az204-lp05-*`
+- `feature/az204-lp06-*`
+- `feature/az204-lp07-*`
+- `feature/az204-lp08-*`
+- `feature/az204-lp09-*`
+- `feature/az204-lp10-*`
+- `feature/az204-lp11-*`
 - `feature/az204-shared-*`
 
 ## Definition of Done (Per Learning Path)
@@ -70,7 +76,7 @@ Build a complete AZ-204 training repo using the same delivery model and quality 
 ## Immediate Next Actions
 - [x] Finalize AZ-204 learning path taxonomy.
 - [x] Scaffold first target path and modules.
-- [ ] Implement first end-to-end lab with validation script.
-- [ ] Scaffold LP03 security path.
-- [ ] Replace legacy AZ-204 top-level docs that still drive student navigation.
+- [ ] Implement first end-to-end lab with validation script in canonical LP01.
+- [ ] Migrate existing production-ready content into canonical LP01-LP03.
+- [ ] Replace remaining references to deprecated broad-path naming in active docs.
 

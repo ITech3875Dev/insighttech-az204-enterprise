@@ -47,12 +47,12 @@ A path is production-ready when all items below are complete:
 - Answer key with objective coverage map.
 - Scoring guidance bands for remediation.
 
-## Reuse from LP01
-When upgrading LP02-LP05, copy structure and quality expectations from:
-- `learning-paths/az204-lp01-develop-azure-compute-solutions/README.md`
-- `learning-paths/az204-lp01-develop-azure-compute-solutions/validation/az204-lp01-validate.ps1`
-- `learning-paths/az204-lp01-develop-azure-compute-solutions/labs/`
-- `learning-paths/az204-lp01-develop-azure-compute-solutions/exams/`
+## Reuse from Canonical LP01
+When upgrading LP02-LP11, copy structure and quality expectations from:
+- `learning-paths/az204-lp01-implement-app-service-web-apps/README.md`
+- `learning-paths/az204-lp01-implement-app-service-web-apps/validation/az204-lp01-validate.ps1`
+- `learning-paths/az204-lp01-implement-app-service-web-apps/labs/`
+- `learning-paths/az204-lp01-implement-app-service-web-apps/exams/`
 
 ## Quality Gate Checklist
 - [ ] Every lab has tasks, verification, and cleanup.

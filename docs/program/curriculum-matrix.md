@@ -1,61 +1,38 @@
-# Curriculum Matrix — AZ-204 (Enterprise)
+# Curriculum Matrix - AZ-204 (Canonical Path Model)
 
-## Domain 1: Develop Azure Compute Solutions (LP01)
+## Path Inventory
 
-| Skills Measured Area | Module | Labs | Validation |
-|---|---|---|---|
-| Build application compute on App Service and Azure Functions | M01 | Beginner Lab-01 + Intermediate Lab-01 | `validation/az204-lp01-validate.ps1` |
-| Container-hosted and deployment workflow scenarios | M02 | Advanced Lab-01 + Capstone | `validation/az204-lp01-validate.ps1` |
+| LP | Learning Path | Modules | Status |
+|---|---|---:|---|
+| LP01 | Implement Azure App Service web apps | 4 | In progress |
+| LP02 | Implement Azure Functions | 2 | In progress |
+| LP03 | Develop solutions that use Blob storage | 3 | In progress |
+| LP04 | Develop solutions that use Azure Cosmos DB | 2 | Planned |
+| LP05 | Implement containerized solutions | 3 | Planned |
+| LP06 | Implement user authentication and authorization | 4 | In progress |
+| LP07 | Implement secure Azure solutions | 3 | In progress |
+| LP08 | Implement API Management | 1 | Planned |
+| LP09 | Develop event-based solutions | 2 | Planned |
+| LP10 | Develop message-based solutions | 1 | Planned |
+| LP11 | Troubleshoot solutions by using Application Insights | 1 | Planned |
 
-Enterprise Enhancements:
-- release slot validation drills
-- rollback and remediation workflow
-- managed identity integration checks
+## Skills-to-Path Mapping
 
-## Domain 2: Develop for Azure Storage (LP02)
+| Skill Area | Primary LP |
+|---|---|
+| App Service web app implementation | LP01 |
+| Azure Functions implementation | LP02 |
+| Blob storage solutions | LP03 |
+| Cosmos DB solutions | LP04 |
+| Containerized solution implementation | LP05 |
+| User auth and authorization | LP06 |
+| Secure Azure solution implementation | LP07 |
+| API Management implementation | LP08 |
+| Event-based solution development | LP09 |
+| Message-based solution development | LP10 |
+| Troubleshooting with Application Insights | LP11 |
 
-| Skills Measured Area | Module | Labs | Validation |
-|---|---|---|---|
-| Implement Blob Storage application workflows | M01 | Beginner Lab-01 | `validation/az204-lp02-validate.ps1` |
-| Implement Cosmos DB data access and modeling patterns | M02 | Intermediate Lab-01 + Capstone | `validation/az204-lp02-validate.ps1` |
-
-Enterprise Enhancements:
-- secure storage connection patterns
-- data lifecycle and partitioning review
-- storage remediation workflow
-
-## Domain 3: Implement Azure Security (LP03)
-
-| Skills Measured Area | Module | Labs | Validation |
-|---|---|---|---|
-| Implement managed identity and Key Vault access | M01 | Planned | `validation/az204-lp03-validate.ps1` |
-| Implement auth flows and secure configuration | M02 | Planned | `validation/az204-lp03-validate.ps1` |
-
-Enterprise Enhancements:
-- least-privilege app identity design
-- secret rotation remediation exercise
-- secure configuration review checklist
-
-## Domain 4: Monitor, Troubleshoot, and Optimize Azure Solutions (LP04)
-
-| Skills Measured Area | Module | Labs | Validation |
-|---|---|---|---|
-| Implement telemetry, tracing, and application monitoring | M01 | Planned | `validation/az204-lp04-validate.ps1` |
-| Troubleshoot and optimize application performance | M02 | Planned | `validation/az204-lp04-validate.ps1` |
-
-Enterprise Enhancements:
-- KQL and triage workflows
-- failure remediation runbooks
-- performance baseline comparison
-
-## Domain 5: Connect to and Consume Azure Services and Third-Party Services (LP05)
-
-| Skills Measured Area | Module | Labs | Validation |
-|---|---|---|---|
-| Integrate messaging and event-driven services | M01 | Planned | `validation/az204-lp05-validate.ps1` |
-| Integrate external APIs and service mediation | M02 | Planned | `validation/az204-lp05-validate.ps1` |
-
-Enterprise Enhancements:
-- event-driven troubleshooting drills
-- API integration contract validation
-- message flow remediation scenarios
+## Validation Convention
+- Each LP has `validation/az204-lpXX-validate.ps1`
+- Each LP has a 50-question exam + answer key
+- Passing target remains 70%
