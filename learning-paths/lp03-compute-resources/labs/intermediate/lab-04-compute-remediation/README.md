@@ -18,8 +18,8 @@ A VM workload is out of baseline for security and operations standards. You must
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-compute-dev-eastus2-01"
-VM_NAME="vm-az104-app-dev-01"
+RG_NAME="rg-az204-compute-dev-eastus2-01"
+VM_NAME="vm-az204-app-dev-01"
 ```
 
 ## Step 1 - Capture baseline
@@ -56,3 +56,4 @@ Create:
 - Remediation enforces compute baseline controls.
 - VM remains healthy post-change.
 - Evidence and rollback plan are complete.
+

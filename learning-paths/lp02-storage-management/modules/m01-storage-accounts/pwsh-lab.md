@@ -3,9 +3,9 @@
 ## Variables
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$RgName = "rg-az104-storage-dev-eastus2-01"
+$RgName = "rg-az204-storage-dev-eastus2-01"
 $Location = "eastus2"
-$StorageAccountName = "staz104m01$((Get-Random -Maximum 99999))"
+$StorageAccountName = "staz204m01$((Get-Random -Maximum 99999))"
 ```
 
 ## Task 1 - Context and resource group
@@ -38,3 +38,4 @@ New-AzStorageShare -Name "share-m01" -Context $ctx
 Get-AzStorageAccount -ResourceGroupName $RgName -Name $StorageAccountName | Select-Object StorageAccountName, Kind, SkuName, EnableHttpsTrafficOnly, MinimumTlsVersion
 Get-AzStorageShare -Context $ctx | Select-Object Name
 ```
+

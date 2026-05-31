@@ -1,7 +1,7 @@
 # AZ-204 Build-Out Checklist
 
 ## Goal
-Build a complete AZ-204 training repo using the same delivery model and quality bar as AZ-104.
+Build a complete AZ-204 training repo using the same delivery model and quality bar as AZ-204.
 
 ## Working Model
 - Branch from `develop` into focused feature branches.
@@ -10,7 +10,7 @@ Build a complete AZ-204 training repo using the same delivery model and quality 
 
 ## Phase 1: Foundation Alignment
 - [x] Confirm AZ-204 exam objective domains and weighting.
-- [x] Map AZ-104 repo structure to AZ-204 domain structure.
+- [x] Map AZ-204 repo structure to AZ-204 domain structure.
 - [x] Decide learning path naming convention for AZ-204.
 - [x] Update top-level README with AZ-204 program intent.
 - [x] Update docs/program curriculum matrix for AZ-204.
@@ -72,4 +72,5 @@ Build a complete AZ-204 training repo using the same delivery model and quality 
 - [x] Scaffold first target path and modules.
 - [ ] Implement first end-to-end lab with validation script.
 - [ ] Scaffold LP03 security path.
-- [ ] Replace legacy AZ-104 top-level docs that still drive student navigation.
+- [ ] Replace legacy AZ-204 top-level docs that still drive student navigation.
+

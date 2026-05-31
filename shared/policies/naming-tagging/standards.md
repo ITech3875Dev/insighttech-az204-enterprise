@@ -2,7 +2,7 @@
 
 ## Resource groups
 `rg-<workload>-<domain>-<env>-<region>-<##>`
-Example: `rg-az104-idgov-dev-eastus2-01`
+Example: `rg-az204-idgov-dev-eastus2-01`
 
 ## Tagging (required)
 - Owner
@@ -11,3 +11,4 @@ Example: `rg-az104-idgov-dev-eastus2-01`
 - Workload
 - DataClass
 - ExpirationDate
+

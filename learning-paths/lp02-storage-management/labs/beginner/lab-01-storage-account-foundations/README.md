@@ -13,12 +13,12 @@ Azure CLI:
 ```bash
 export SUBSCRIPTION_ID="<your-subscription-id>"
 export LOCATION="eastus2"
-export RG_NAME="rg-az104-storage-dev-eastus2-01"
-export STORAGE_ACCOUNT="staz104stordev01"
+export RG_NAME="rg-az204-storage-dev-eastus2-01"
+export STORAGE_ACCOUNT="staz204stordev01"
 export TAG_Owner="student01"
 export TAG_CostCenter="training"
 export TAG_Environment="dev"
-export TAG_Workload="az104"
+export TAG_Workload="az204"
 export TAG_DataClass="training"
 export TAG_ExpirationDate="2026-12-31"
 ```
@@ -27,14 +27,14 @@ PowerShell:
 
 ```powershell
 $SubscriptionId     = "<your-subscription-id>"
-$ResourceGroupName  = "rg-az104-storage-dev-eastus2-01"
+$ResourceGroupName  = "rg-az204-storage-dev-eastus2-01"
 $Location           = "eastus2"
-$StorageAccountName = "staz104stordev01"
+$StorageAccountName = "staz204stordev01"
 $Tags = @{
   Owner          = "student01"
   CostCenter     = "training"
   Environment    = "dev"
-  Workload       = "az104"
+  Workload       = "az204"
   DataClass      = "training"
   ExpirationDate = "2026-12-31"
 }
@@ -62,7 +62,7 @@ Get-AzContext | Select-Object Subscription, Tenant
 
 ## Task 2 - Create the resource group with required tags
 
-Portal: search **Resource groups** → **Create**, name `rg-az104-storage-dev-eastus2-01`, region **East US 2**, add the required tags, then **Review + create**.
+Portal: search **Resource groups** → **Create**, name `rg-az204-storage-dev-eastus2-01`, region **East US 2**, add the required tags, then **Review + create**.
 
 Azure CLI:
 
@@ -94,7 +94,7 @@ Get-AzResourceGroup -Name $ResourceGroupName | Select-Object ResourceGroupName, 
 
 ## Task 3 - Create the storage account with secure settings
 
-Portal: search **Storage accounts** → **Create**, select the resource group, name `staz104stordev01`, region **East US 2**, Performance **Standard**, Redundancy **LRS**. On the **Advanced** tab enable **Secure transfer**, set **Minimum TLS** to **1.2**, and disable **Allow Blob public access**. Review + create.
+Portal: search **Storage accounts** → **Create**, select the resource group, name `staz204stordev01`, region **East US 2**, Performance **Standard**, Redundancy **LRS**. On the **Advanced** tab enable **Secure transfer**, set **Minimum TLS** to **1.2**, and disable **Allow Blob public access**. Review + create.
 
 Azure CLI:
 
@@ -171,3 +171,4 @@ Expected:
 - PASS: HTTPS-only enabled
 - PASS: Minimum TLS is TLS1_2
 - PASS: Blob public access disabled
+

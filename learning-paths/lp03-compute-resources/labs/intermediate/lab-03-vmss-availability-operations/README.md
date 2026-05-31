@@ -19,14 +19,14 @@ An application on VM scale sets is experiencing inconsistent availability during
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-compute-dev-eastus2-01"
-VMSS_NAME="vmss-az104-web-dev-01"
+RG_NAME="rg-az204-compute-dev-eastus2-01"
+VMSS_NAME="vmss-az204-web-dev-01"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-compute-dev-eastus2-01"
-$VmssName = "vmss-az104-web-dev-01"
+$ResourceGroupName = "rg-az204-compute-dev-eastus2-01"
+$VmssName = "vmss-az204-web-dev-01"
 ```
 
 ## Step 1 - Capture baseline evidence
@@ -83,3 +83,4 @@ Create:
 - VMSS capacity and autoscale profile match intended operations model.
 - Rolling maintenance completed without service outage evidence.
 - Documentation includes rollback and verification steps.
+

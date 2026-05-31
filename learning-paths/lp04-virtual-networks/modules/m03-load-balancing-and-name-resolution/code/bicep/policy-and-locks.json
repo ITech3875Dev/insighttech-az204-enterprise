@@ -96,7 +96,7 @@
             "value": "lock-rg-cannotdelete"
           },
           "lockNotes": {
-            "value": "AZ-104 lab: prevent accidental deletion"
+            "value": "AZ-204 lab: prevent accidental deletion"
           }
         },
         "template": {
@@ -116,7 +116,7 @@
             },
             "lockNotes": {
               "type": "string",
-              "defaultValue": "AZ-104 lab: prevent accidental deletion"
+              "defaultValue": "AZ-204 lab: prevent accidental deletion"
             }
           },
           "resources": [

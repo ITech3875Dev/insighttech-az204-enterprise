@@ -20,8 +20,8 @@ Bash / Azure CLI:
 ```bash
 SUBSCRIPTION_ID="<your-subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-storage-dev-eastus2-01"
-STORAGE_ACCOUNT_NAME="staz104stordev01"
+RG_NAME="rg-az204-storage-dev-eastus2-01"
+STORAGE_ACCOUNT_NAME="staz204stordev01"
 SHARE_NAME="labfiles"
 SHARE_QUOTA_GiB=100
 ```
@@ -31,8 +31,8 @@ PowerShell:
 ```powershell
 $SubscriptionId      = "<your-subscription-id>"
 $Location            = "eastus2"
-$ResourceGroupName   = "rg-az104-storage-dev-eastus2-01"
-$StorageAccountName  = "staz104stordev01"
+$ResourceGroupName   = "rg-az204-storage-dev-eastus2-01"
+$StorageAccountName  = "staz204stordev01"
 $ShareName           = "labfiles"
 $ShareQuotaGiB       = 100
 ```
@@ -188,3 +188,4 @@ A passing result confirms the storage account has an active file share with soft
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+

@@ -22,7 +22,7 @@ Run governance operations from CLI with reproducible output and audit-ready evid
 ```bash
 mkdir -p out
 SUB="<subId>"
-RG="rg-az104-cliops-dev-eastus2-01"
+RG="rg-az204-cliops-dev-eastus2-01"
 
 az account set --subscription "$SUB"
 az account show -o table
@@ -94,3 +94,4 @@ If budget command is unavailable in your tenant context, capture and document th
 - Permission denied: confirm role at queried scope
 - Incomplete management group results: verify tenant-level reader access
 - Command version mismatch: run `az version` and update CLI if needed
+

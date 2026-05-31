@@ -1,6 +1,6 @@
 # LP05 Practice Exam - 50 Questions (Monitor and back up Azure resources)
 
-**Domain:** Monitor and back up Azure resources (AZ-104)
+**Domain:** Monitor and back up Azure resources (AZ-204)
 
 ## Questions
 
@@ -254,3 +254,4 @@
    - B. One-time setup with no validation
    - C. Disable alerts to reduce noise
    - D. Shared credentials and manual-only recovery
+

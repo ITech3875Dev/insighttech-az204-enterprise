@@ -3,11 +3,11 @@
 ## Variables
 ```powershell
 $SUBSCRIPTION_ID = "<your-subscription-id>"
-$MG_ROOT = "mg-az104-root"
-$MG_PLATFORM = "mg-az104-platform"
-$MG_WORKLOADS = "mg-az104-workloads"
-$MG_SANDBOX = "mg-az104-sandbox"
-$GROUP_OBJECT_ID = "<entra-group-object-id>"  # az104-rbac-readers
+$MG_ROOT = "mg-az204-root"
+$MG_PLATFORM = "mg-az204-platform"
+$MG_WORKLOADS = "mg-az204-workloads"
+$MG_SANDBOX = "mg-az204-sandbox"
+$GROUP_OBJECT_ID = "<entra-group-object-id>"  # az204-rbac-readers
 ```
 
 ## Task 1 — Create management groups (if permitted)
@@ -21,7 +21,7 @@ New-AzManagementGroup -GroupName $MG_WORKLOADS -ParentId $MG_ROOT
 New-AzManagementGroup -GroupName $MG_SANDBOX -ParentId $MG_ROOT
 ```
 
-## Task 2 — Move subscription into mg-az104-workloads
+## Task 2 — Move subscription into mg-az204-workloads
 ```powershell
 New-AzManagementGroupSubscription -GroupName $MG_WORKLOADS -SubscriptionId $SUBSCRIPTION_ID
 ```
@@ -36,3 +36,4 @@ New-AzRoleAssignment -ObjectId $GROUP_OBJECT_ID -RoleDefinitionName "Reader" -Sc
 ```powershell
 Get-AzRoleAssignment -Scope $mgScope | Where-Object RoleDefinitionName -eq "Reader"
 ```
+

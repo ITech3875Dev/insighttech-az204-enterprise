@@ -7,16 +7,16 @@
 ### Azure CLI
 ```bash
 export SUBSCRIPTION_ID="<your-subscription-id>"
-export MG_ROOT="mg-az104-root"
-export MG_WORKLOADS="mg-az104-workloads"
-export GROUP_OBJECT_ID="<entra-group-object-id>"   # az104-rbac-readers
+export MG_ROOT="mg-az204-root"
+export MG_WORKLOADS="mg-az204-workloads"
+export GROUP_OBJECT_ID="<entra-group-object-id>"   # az204-rbac-readers
 ```
 
 ### PowerShell
 ```powershell
 $SUBSCRIPTION_ID="<your-subscription-id>"
-$MG_ROOT="mg-az104-root"
-$MG_WORKLOADS="mg-az104-workloads"
+$MG_ROOT="mg-az204-root"
+$MG_WORKLOADS="mg-az204-workloads"
 $GROUP_OBJECT_ID="<entra-group-object-id>"
 ```
 
@@ -27,10 +27,10 @@ Follow module `M02` portal steps. If denied, record the error and proceed to ver
 
 ---
 
-## Task 2 — Move the subscription to `mg-az104-workloads`
+## Task 2 — Move the subscription to `mg-az204-workloads`
 
 ### Portal
-Management groups → `mg-az104-workloads` → **Add subscription** → select subscription → **Save**.
+Management groups → `mg-az204-workloads` → **Add subscription** → select subscription → **Save**.
 
 ### Azure CLI
 ```bash
@@ -48,7 +48,7 @@ New-AzManagementGroupSubscription -GroupName $MG_WORKLOADS -SubscriptionId $SUBS
 
 ---
 
-## Task 3 — Assign Reader to `az104-rbac-readers` at MG scope
+## Task 3 — Assign Reader to `az204-rbac-readers` at MG scope
 
 ### Azure CLI
 ```bash
@@ -78,3 +78,4 @@ pwsh -File learning-paths/lp01-identity-governance/modules/m02-management-groups
   -WorkloadsManagementGroupName $MG_WORKLOADS `
   -GroupObjectId $GROUP_OBJECT_ID
 ```
+

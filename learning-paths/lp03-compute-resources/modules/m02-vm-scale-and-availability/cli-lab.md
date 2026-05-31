@@ -3,7 +3,7 @@
 ## Variables
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-storage-dev-eastus2-01"
+RG_NAME="rg-az204-storage-dev-eastus2-01"
 SA_NAME="<storage-account-name>"
 ```
 
@@ -57,3 +57,4 @@ az storage container list --account-name "$SA_NAME" --auth-mode login -o table
 az storage account blob-service-properties show --account-name "$SA_NAME" --resource-group "$RG_NAME" -o jsonc
 az storage account management-policy show -g "$RG_NAME" --account-name "$SA_NAME" -o jsonc
 ```
+

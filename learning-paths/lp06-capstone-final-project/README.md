@@ -1,7 +1,7 @@
 # LP06 - Capstone Final Project
 
 ## Project Scope
-This learning path contains the integrated final project that combines all AZ-104 domains into one enterprise landing zone implementation.
+This learning path contains the integrated final project that combines all AZ-204 domains into one enterprise landing zone implementation.
 
 ## Capstone Track
 - `masterclass/enterprise-landing-zone/README.md`
@@ -25,3 +25,4 @@ All spoke traffic must be forced to hub for inspection and policy enforcement.
 - Topology and requirements documented
 - OPNsense deployment and hardening workflow documented
 - Spoke VM forced-tunnel validation workflow documented
+

@@ -3,7 +3,7 @@ param(
   [string]$SubscriptionId,
 
   [Parameter(Mandatory=$true)]
-  [string]$ResourceGroupName = "rg-az104-compute-dev-eastus2-01",
+  [string]$ResourceGroupName = "rg-az204-compute-dev-eastus2-01",
 
   [Parameter(Mandatory=$true)]
   [string]$VmName,
@@ -43,3 +43,4 @@ Run "learning-paths/lp03-compute-resources/modules/m04-compute-security-and-oper
 
 Write-Host "PASS: LP03 validation complete."
 exit 0
+

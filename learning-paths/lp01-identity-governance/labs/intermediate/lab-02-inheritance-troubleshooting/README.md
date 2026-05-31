@@ -24,15 +24,15 @@ Your job:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_A="rg-az104-inherit-a-dev-eastus2-01"
-RG_B="rg-az104-inherit-b-dev-eastus2-01"
+RG_A="rg-az204-inherit-a-dev-eastus2-01"
+RG_B="rg-az204-inherit-b-dev-eastus2-01"
 MG_ID="<management-group-id>"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$RgA = "rg-az104-inherit-a-dev-eastus2-01"
-$RgB = "rg-az104-inherit-b-dev-eastus2-01"
+$RgA = "rg-az204-inherit-a-dev-eastus2-01"
+$RgB = "rg-az204-inherit-b-dev-eastus2-01"
 $ManagementGroupId = "<management-group-id>"
 ```
 
@@ -151,4 +151,5 @@ Create root-cause-summary.md with:
 - Fix minimizes blast radius
 - Rollback is executable
 - Prevention guidance is documented
+
 

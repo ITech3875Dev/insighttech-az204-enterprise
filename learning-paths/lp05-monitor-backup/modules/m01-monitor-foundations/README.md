@@ -4,7 +4,7 @@
 | Item | Details |
 |------|----------|
 | **Duration** | Beginner: ~60 min \| Intermediate: ~70 min \| Advanced: ~95 min |
-| **Prerequisites** | AZ-104 prerequisites recommended |
+| **Prerequisites** | AZ-204 prerequisites recommended |
 | **Difficulty** | All tiers available |
 | **Labs** | Beginner + Intermediate + Advanced alignment |
 
@@ -15,7 +15,7 @@ You will:
 - Configure activity log insights and monitoring scope
 - Validate monitoring data flow with Portal, CLI, and PowerShell
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Required settings verified (data ingestion, activity log visibility)
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

@@ -2,7 +2,7 @@
 
 ## Variables
 - Subscription: your lab subscription.
-- Target RG: `rg-az104-storage-dev-eastus2-01`.
+- Target RG: `rg-az204-storage-dev-eastus2-01`.
 - Storage account: `<storage-account-name>`.
 
 ## Task 1 - Create Azure file shares
@@ -23,7 +23,7 @@
 
 ## Task 4 - File Sync planning
 1. In Azure Portal, open **Storage Sync Services**.
-2. Create sync service `stsync-az104-eastus2-01` in the same RG.
+2. Create sync service `stsync-az204-eastus2-01` in the same RG.
 3. Create a sync group named `sync-teamdocs` and select cloud endpoint `teamdocs`.
 4. Record required on-prem agent and server endpoint prerequisites for later implementation.
 
@@ -31,3 +31,4 @@
 - `profiles` and `teamdocs` exist and are accessible.
 - Sample files are present in target share after copy.
 - Sync service and sync group exist with cloud endpoint configured.
+

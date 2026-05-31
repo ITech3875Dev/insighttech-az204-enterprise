@@ -42,8 +42,8 @@ Document:
 
 Use scopes:
 
-- Resource group: rg-az104-monitor-dev-eastus2-01
-- Recovery Services vault: rsv-az104-ops-dev-01
+- Resource group: rg-az204-monitor-dev-eastus2-01
+- Recovery Services vault: rsv-az204-ops-dev-01
 
 Suggested matrix:
 
@@ -57,8 +57,8 @@ CLI example:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az104-monitor-dev-eastus2-01"
-VAULT_SCOPE="$RG_SCOPE/providers/Microsoft.RecoveryServices/vaults/rsv-az104-ops-dev-01"
+RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az204-monitor-dev-eastus2-01"
+VAULT_SCOPE="$RG_SCOPE/providers/Microsoft.RecoveryServices/vaults/rsv-az204-ops-dev-01"
 
 az role assignment create --assignee-object-id "<alert-ops-group-id>" --assignee-principal-type Group --role "Monitoring Contributor" --scope "$RG_SCOPE"
 az role assignment create --assignee-object-id "<backup-ops-group-id>" --assignee-principal-type Group --role "Backup Contributor" --scope "$VAULT_SCOPE"
@@ -88,3 +88,4 @@ In rollback.md provide delete commands for all role assignments.
 - Read-only auditing remains available without elevation.
 - Validation evidence includes blocked privilege-escalation attempts.
 - Design can be reviewed and replayed by another team.
+

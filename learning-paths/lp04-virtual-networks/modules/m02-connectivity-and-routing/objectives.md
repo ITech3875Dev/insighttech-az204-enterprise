@@ -1,6 +1,6 @@
 # Objectives
 
-## AZ-104 Skill Mapping
+## AZ-204 Skill Mapping
 - Configure VNet peering and hybrid connectivity options
 - Configure route tables and user-defined routes
 - Analyze effective routes and next-hop behavior
@@ -11,3 +11,4 @@
 - Route table association to subnet is present
 - Effective routes output aligns with expected next hops
 - Connectivity checks across peered networks succeed
+

@@ -3,7 +3,7 @@ param(
   [string]$SubscriptionId,
 
   [Parameter(Mandatory=$true)]
-  [string]$ResourceGroupName = "rg-az104-monitor-dev-eastus2-01",
+  [string]$ResourceGroupName = "rg-az204-monitor-dev-eastus2-01",
 
   [Parameter(Mandatory=$true)]
   [string]$LogAnalyticsWorkspaceName,
@@ -43,3 +43,4 @@ Run "learning-paths/lp05-monitor-backup/modules/m04-monitoring-governance-and-re
 
 Write-Host "PASS: LP05 validation complete."
 exit 0
+

@@ -11,9 +11,10 @@
 ## Validation
 ```powershell
 $SUBSCRIPTION_ID="<your-subscription-id>"
-$BUDGET_NAME="az104-lab-budget"
+$BUDGET_NAME="az204-lab-budget"
 
 pwsh -File learning-paths/lp02-storage-management/modules/m04-cost-advisor-governance/validation/validate.ps1 `
   -SubscriptionId $SUBSCRIPTION_ID `
   -BudgetName $BUDGET_NAME
 ```
+

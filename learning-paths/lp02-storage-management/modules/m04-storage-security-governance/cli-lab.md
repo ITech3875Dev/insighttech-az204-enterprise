@@ -3,7 +3,7 @@
 ## Variables
 ```bash
 export SUBSCRIPTION_ID="<subscription-id>"
-export RG="rg-az104-storage-dev-eastus2-01"
+export RG="rg-az204-storage-dev-eastus2-01"
 export STORAGE_ACCOUNT="<storage-account-name>"
 export ALLOWED_IP="<your-public-ip>"
 ```
@@ -39,3 +39,4 @@ az storage account network-rule add \
 az storage account show --name "$STORAGE_ACCOUNT" --resource-group "$RG" --query "{httpsOnly:httpsTrafficOnly,minTls:minTlsVersion,publicAccess:allowBlobPublicAccess,networkDefault:networkRuleSet.defaultAction}" -o json
 az storage account network-rule list --account-name "$STORAGE_ACCOUNT" --resource-group "$RG" -o table
 ```
+

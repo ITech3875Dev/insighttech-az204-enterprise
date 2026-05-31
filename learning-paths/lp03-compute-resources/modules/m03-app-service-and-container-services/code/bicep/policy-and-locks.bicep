@@ -59,6 +59,7 @@ module rgLock 'rg-lock.bicep' = {
   scope: rg
   params: {
     lockName: 'lock-rg-cannotdelete'
-    lockNotes: 'AZ-104 lab: prevent accidental deletion'
+    lockNotes: 'AZ-204 lab: prevent accidental deletion'
   }
 }
+

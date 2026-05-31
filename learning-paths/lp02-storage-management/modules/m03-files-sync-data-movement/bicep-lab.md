@@ -9,7 +9,8 @@ Deploy Azure file shares for data movement and sync preparation.
 ## Deploy
 ```bash
 az deployment group create \
-	--resource-group rg-az104-storage-dev-eastus2-01 \
+	--resource-group rg-az204-storage-dev-eastus2-01 \
 	--template-file learning-paths/lp02-storage-management/modules/m03-files-sync-data-movement/code/main.bicep \
 	--parameters storageAccountName=<storage-account-name>
 ```
+

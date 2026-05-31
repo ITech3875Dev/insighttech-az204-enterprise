@@ -18,8 +18,8 @@ Critical alerting is misconfigured and response routing is incomplete. You must 
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-monitor-dev-eastus2-01"
-ACTION_GROUP_NAME="ag-az104-ops-dev-01"
+RG_NAME="rg-az204-monitor-dev-eastus2-01"
+ACTION_GROUP_NAME="ag-az204-ops-dev-01"
 ALERT_RULE_NAME="cpu-critical-alert"
 TARGET_RESOURCE_ID="<target-resource-id>"
 ```
@@ -53,3 +53,4 @@ az monitor metrics alert show -g "$RG_NAME" -n "$ALERT_RULE_NAME" -o json > evid
 - Alert rule includes correct scope and action routing.
 - Monitoring remediation is evidenced with before/after outputs.
 - Rollback instructions are documented.
+

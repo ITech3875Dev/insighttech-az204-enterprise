@@ -31,7 +31,7 @@ Use shared modules in:
 ```bash
 SUB_ID="<subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-bicep-dev-eastus2-01"
+RG_NAME="rg-az204-bicep-dev-eastus2-01"
 
 az account set --subscription "$SUB_ID"
 az bicep version
@@ -130,3 +130,4 @@ az deployment sub what-if \
 - Authorization failures: verify role assignment rights at target scope
 - Role assignment conflicts: ensure deterministic `guid()` naming inputs are stable
 - Policy assignment not visible: confirm target scope and active subscription context
+

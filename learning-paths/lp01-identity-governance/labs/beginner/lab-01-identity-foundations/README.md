@@ -22,7 +22,7 @@ You will:
 export SUBSCRIPTION_ID="<your-subscription-id>"
 export LOCATION="eastus2"
 export ENV="dev"
-export WORKLOAD="az104"
+export WORKLOAD="az204"
 export RG_NAME="rg-${WORKLOAD}-idgov-${ENV}-${LOCATION}-01"
 
 # Required tags
@@ -34,7 +34,7 @@ export TAG_DataClass="training"
 export TAG_ExpirationDate="2026-12-31"
 
 # Entra group
-export GROUP_NAME="az104-rbac-readers"
+export GROUP_NAME="az204-rbac-readers"
 export GROUP_OBJECT_ID="<paste-group-object-id>"
 ```
 
@@ -43,7 +43,7 @@ export GROUP_OBJECT_ID="<paste-group-object-id>"
 $SUBSCRIPTION_ID = "<your-subscription-id>"
 $LOCATION = "eastus2"
 $ENV = "dev"
-$WORKLOAD = "az104"
+$WORKLOAD = "az204"
 $RG_NAME = "rg-$WORKLOAD-idgov-$ENV-$LOCATION-01"
 $GROUP_OBJECT_ID = "<paste-group-object-id>"
 
@@ -89,7 +89,7 @@ Get-AzContext | Select-Object Subscription, Tenant
 
 ## Portal
 1. Search **Resource groups** → **Create**
-2. Name: `rg-az104-idgov-dev-eastus2-01`
+2. Name: `rg-az204-idgov-dev-eastus2-01`
 3. Region: **East US 2**
 4. Tags: add the required tags (Owner, CostCenter, Environment, Workload, DataClass, ExpirationDate)
 5. **Review + create** → **Create**
@@ -117,7 +117,7 @@ Get-AzResourceGroup -Name $RG_NAME | Select-Object ResourceGroupName, Location, 
 1. Search **Microsoft Entra ID**
 2. Groups → **New group**
 3. Type: Security
-4. Name: `az104-rbac-readers`
+4. Name: `az204-rbac-readers`
 5. Create and copy **Object ID** → paste into `GROUP_OBJECT_ID`
 
 ## Azure CLI (if permitted)
@@ -134,7 +134,7 @@ echo "GROUP_OBJECT_ID=$GROUP_OBJECT_ID"
 ## Portal
 1. Open RG → **Access control (IAM)**
 2. Add role assignment → **Reader**
-3. Select group `az104-rbac-readers`
+3. Select group `az204-rbac-readers`
 4. Review + assign (wait 1–3 minutes)
 
 ## Azure CLI
@@ -169,3 +169,4 @@ pwsh -File learning-paths/lp01-identity-governance/modules/m01-users-groups-rbac
 - PASS: Resource group exists
 - PASS: Required tags present
 - PASS: Reader role assignment present
+

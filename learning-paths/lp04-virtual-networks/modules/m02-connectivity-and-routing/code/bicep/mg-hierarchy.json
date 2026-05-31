@@ -11,7 +11,7 @@
   "parameters": {
     "rootMgName": {
       "type": "string",
-      "defaultValue": "mg-az104-root",
+      "defaultValue": "mg-az204-root",
       "metadata": {
         "description": "Root management group name."
       }
@@ -19,9 +19,9 @@
     "childMgs": {
       "type": "array",
       "defaultValue": [
-        "mg-az104-platform",
-        "mg-az104-workloads",
-        "mg-az104-sandbox"
+        "mg-az204-platform",
+        "mg-az204-workloads",
+        "mg-az204-sandbox"
       ],
       "metadata": {
         "description": "Child management groups."

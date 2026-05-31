@@ -30,21 +30,21 @@ The platform team manages virtual networks shared by multiple application teams.
 ```bash
 SUB_ID="<subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-netops-dev-eastus2-01"
-VNET_NAME="vnet-az104-netops-dev-eastus2-01"
+RG_NAME="rg-az204-netops-dev-eastus2-01"
+VNET_NAME="vnet-az204-netops-dev-eastus2-01"
 SUBNET_PROD="snet-prod"
 SUBNET_MGMT="snet-mgmt"
-NSG_NAME="nsg-az104-prod-eastus2-01"
+NSG_NAME="nsg-az204-prod-eastus2-01"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
 $Location = "eastus2"
-$RgName = "rg-az104-netops-dev-eastus2-01"
-$VnetName = "vnet-az104-netops-dev-eastus2-01"
+$RgName = "rg-az204-netops-dev-eastus2-01"
+$VnetName = "vnet-az204-netops-dev-eastus2-01"
 $SubnetProd = "snet-prod"
 $SubnetMgmt = "snet-mgmt"
-$NsgName = "nsg-az104-prod-eastus2-01"
+$NsgName = "nsg-az204-prod-eastus2-01"
 ```
 
 ## Task 1 - Set Context and Create Baseline Resource Group
@@ -262,3 +262,4 @@ Create these files in your branch under this lab folder:
 
 - Cause: eventual consistency delay (rare)
 - Fix: wait 30 seconds and re-run the subnet show command
+

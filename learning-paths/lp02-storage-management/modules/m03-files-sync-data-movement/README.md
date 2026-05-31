@@ -15,7 +15,7 @@ You will:
 - Plan and execute storage data movement options
 - Validate migration and sync outcomes with evidence
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Data movement operations documented with outcomes
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

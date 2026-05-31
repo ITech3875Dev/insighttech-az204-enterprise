@@ -23,7 +23,7 @@ Your organization runs hub-and-spoke networks across multiple subscriptions. You
 
 - Subscription A: central-network-hub
 - Subscription B: spoke-app-network
-- Resource group in Subscription B: rg-az104-network-prod-eastus2-01
+- Resource group in Subscription B: rg-az204-network-prod-eastus2-01
 
 ## Required Deliverables
 
@@ -48,7 +48,7 @@ Document:
 Define assignments:
 
 - network-auditor: Reader in both subscriptions.
-- network-operator: Network Contributor on rg-az104-network-prod-eastus2-01.
+- network-operator: Network Contributor on rg-az204-network-prod-eastus2-01.
 - peering-operator: Network Contributor at specific hub and spoke VNet scopes.
 
 ## Step 3 - Policy controls
@@ -87,3 +87,4 @@ Provide rollback commands for all role and policy assignments.
 - Policy controls are assigned and tested.
 - Evidence demonstrates expected allow and deny outcomes.
 - Rollback and governance notes are complete.
+

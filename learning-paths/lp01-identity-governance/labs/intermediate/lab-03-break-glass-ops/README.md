@@ -27,14 +27,14 @@ Simulate a full break-glass workflow safely:
 
 ```bash
 SUB_ID="<subscription-id>"
-TARGET_SCOPE="/subscriptions/<subscription-id>/resourceGroups/rg-az104-breakglass-dev-eastus2-01"
-BREAK_GLASS_GROUP="az104-breakglass-ops"
+TARGET_SCOPE="/subscriptions/<subscription-id>/resourceGroups/rg-az204-breakglass-dev-eastus2-01"
+BREAK_GLASS_GROUP="az204-breakglass-ops"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$TargetScope = "/subscriptions/<subscription-id>/resourceGroups/rg-az104-breakglass-dev-eastus2-01"
-$BreakGlassGroup = "az104-breakglass-ops"
+$TargetScope = "/subscriptions/<subscription-id>/resourceGroups/rg-az204-breakglass-dev-eastus2-01"
+$BreakGlassGroup = "az204-breakglass-ops"
 ```
 
 ## Step 1 - Author the Operational Runbook
@@ -109,7 +109,7 @@ Run one low-risk action at target scope, for example updating a non-critical tag
 CLI example:
 
 ```bash
-RG_NAME="rg-az104-breakglass-dev-eastus2-01"
+RG_NAME="rg-az204-breakglass-dev-eastus2-01"
 az group update --name "$RG_NAME" --set tags.BreakGlassTest="true" > evidence-incident-action.json
 ```
 
@@ -162,3 +162,4 @@ Create evidence-activity-summary.md and identify:
 - Missing log events: increase query window to 4 hours
 - Delete fails: verify principal ID and exact scope used for assignment
 - Authorization errors: ensure role-assignment rights at target scope
+

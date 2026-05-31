@@ -8,9 +8,9 @@ Azure CLI:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-compute-dev-eastus2-01"
+RG_NAME="rg-az204-compute-dev-eastus2-01"
 LOCATION="eastus2"
-VMSS_NAME="vmss-az104-web-dev-01"
+VMSS_NAME="vmss-az204-web-dev-01"
 ADMIN_USER="azureadmin"
 ```
 
@@ -18,9 +18,9 @@ PowerShell:
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-compute-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-compute-dev-eastus2-01"
 $Location = "eastus2"
-$VmssName = "vmss-az104-web-dev-01"
+$VmssName = "vmss-az204-web-dev-01"
 $AdminUser = "azureadmin"
 ```
 
@@ -93,3 +93,4 @@ az monitor autoscale list -g "$RG_NAME" -o table
 ```powershell
 pwsh -File learning-paths/lp03-compute-resources/modules/m02-vm-scale-and-availability/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -VmssName $VmssName
 ```
+

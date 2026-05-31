@@ -20,8 +20,8 @@ Bash / Azure CLI:
 ```bash
 SUBSCRIPTION_ID="<your-subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-compute-dev-eastus2-01"
-VM_NAME="vm-az104-compute-dev-01"
+RG_NAME="rg-az204-compute-dev-eastus2-01"
+VM_NAME="vm-az204-compute-dev-01"
 IMAGE="Ubuntu2204"
 VM_SIZE="Standard_B2s"
 ADMIN_USER="azureadmin"
@@ -32,8 +32,8 @@ PowerShell:
 ```powershell
 $SubscriptionId     = "<your-subscription-id>"
 $Location           = "eastus2"
-$ResourceGroupName  = "rg-az104-compute-dev-eastus2-01"
-$VmName             = "vm-az104-compute-dev-01"
+$ResourceGroupName  = "rg-az204-compute-dev-eastus2-01"
+$VmName             = "vm-az204-compute-dev-01"
 $Image              = "Ubuntu2204"
 $VmSize             = "Standard_B2s"
 $AdminUser          = "azureadmin"
@@ -67,7 +67,7 @@ Azure CLI:
 az group create \
   --name "$RG_NAME" \
   --location "$LOCATION" \
-  --tags env=dev project=az104 owner=labuser
+  --tags env=dev project=az204 owner=labuser
 ```
 
 PowerShell:
@@ -76,7 +76,7 @@ PowerShell:
 New-AzResourceGroup `
   -Name $ResourceGroupName `
   -Location $Location `
-  -Tag @{ env = "dev"; project = "az104"; owner = "labuser" }
+  -Tag @{ env = "dev"; project = "az204"; owner = "labuser" }
 ```
 
 Verify:
@@ -161,3 +161,4 @@ A passing result confirms the VM exists, is running, and meets the baseline conf
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+

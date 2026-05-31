@@ -16,15 +16,15 @@ Your job is to identify whether the issue is caused by:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-storage-dev-eastus2-01"
-STORAGE_ACCOUNT="staz104blobdev01"
+RG_NAME="rg-az204-storage-dev-eastus2-01"
+STORAGE_ACCOUNT="staz204blobdev01"
 CONTAINER="raw"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-storage-dev-eastus2-01"
-$StorageAccountName = "staz104blobdev01"
+$ResourceGroupName = "rg-az204-storage-dev-eastus2-01"
+$StorageAccountName = "staz204blobdev01"
 $ContainerName = "raw"
 ```
 
@@ -89,4 +89,5 @@ Produce:
 - Evidence captures before and after states.
 - Fix follows least privilege and minimal blast radius.
 - Rollback steps are executable.
+
 

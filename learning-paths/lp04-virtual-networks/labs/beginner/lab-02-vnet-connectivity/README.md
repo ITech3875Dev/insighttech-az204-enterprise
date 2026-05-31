@@ -8,22 +8,22 @@ Azure CLI:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-network-dev-eastus2-01"
+RG_NAME="rg-az204-network-dev-eastus2-01"
 LOCATION="eastus2"
-VNET_HUB="vnet-az104-hub-dev-eus2-01"
-VNET_SPOKE="vnet-az104-spoke-dev-eus2-01"
-ROUTE_TABLE="rt-az104-spoke-dev-eus2-01"
+VNET_HUB="vnet-az204-hub-dev-eus2-01"
+VNET_SPOKE="vnet-az204-spoke-dev-eus2-01"
+ROUTE_TABLE="rt-az204-spoke-dev-eus2-01"
 ```
 
 PowerShell:
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-network-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-network-dev-eastus2-01"
 $Location = "eastus2"
-$VnetHub = "vnet-az104-hub-dev-eus2-01"
-$VnetSpoke = "vnet-az104-spoke-dev-eus2-01"
-$RouteTableName = "rt-az104-spoke-dev-eus2-01"
+$VnetHub = "vnet-az204-hub-dev-eus2-01"
+$VnetSpoke = "vnet-az204-spoke-dev-eus2-01"
+$RouteTableName = "rt-az204-spoke-dev-eus2-01"
 ```
 
 ## Task 1 - Create VNets and subnets
@@ -80,3 +80,4 @@ az network route-table show -g "$RG_NAME" -n "$ROUTE_TABLE" --query "routes[].{n
 ```powershell
 pwsh -File learning-paths/lp04-virtual-networks/modules/m02-connectivity-and-routing/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -RouteTableName $RouteTableName
 ```
+

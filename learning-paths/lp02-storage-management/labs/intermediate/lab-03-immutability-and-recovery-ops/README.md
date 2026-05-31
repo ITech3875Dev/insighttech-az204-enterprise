@@ -19,15 +19,15 @@ Your compliance team requires immutable protection for critical blob data, while
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-storage-dev-eastus2-01"
-STORAGE_ACCOUNT="staz104blobdev01"
+RG_NAME="rg-az204-storage-dev-eastus2-01"
+STORAGE_ACCOUNT="staz204blobdev01"
 CONTAINER="archive"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-storage-dev-eastus2-01"
-$StorageAccountName = "staz104blobdev01"
+$ResourceGroupName = "rg-az204-storage-dev-eastus2-01"
+$StorageAccountName = "staz204blobdev01"
 $ContainerName = "archive"
 ```
 
@@ -82,3 +82,4 @@ Create:
 - Immutability and retention controls are enabled and evidenced.
 - Recovery behavior is demonstrated with before/after evidence.
 - Rollback and operations notes are clear and reproducible.
+

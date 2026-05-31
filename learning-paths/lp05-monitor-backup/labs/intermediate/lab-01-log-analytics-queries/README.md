@@ -31,15 +31,15 @@ The platform team must demonstrate that the Log Analytics workspace can answer o
 ```bash
 SUB_ID="<subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-monops-dev-eastus2-01"
-WORKSPACE_NAME="law-az104-monops-dev-01"
+RG_NAME="rg-az204-monops-dev-eastus2-01"
+WORKSPACE_NAME="law-az204-monops-dev-01"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
 $Location = "eastus2"
-$RgName = "rg-az104-monops-dev-eastus2-01"
-$WorkspaceName = "law-az104-monops-dev-01"
+$RgName = "rg-az204-monops-dev-eastus2-01"
+$WorkspaceName = "law-az204-monops-dev-01"
 ```
 
 ## Task 1 - Set Context and Create Baseline Resource Group
@@ -223,3 +223,4 @@ Create these files in your branch under this lab folder:
 
 - Cause: not all resource types support all log categories
 - Fix: run `az monitor diagnostic-settings categories list --resource "$RESOURCE_ID"` to see supported categories before creating
+

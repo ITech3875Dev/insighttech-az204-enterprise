@@ -8,7 +8,7 @@ param tags object = {
   Owner: 'student01'
   CostCenter: 'training'
   Environment: 'dev'
-  Workload: 'az104'
+  Workload: 'az204'
   DataClass: 'training'
   ExpirationDate: '2026-12-31'
 }
@@ -29,3 +29,4 @@ module rgReaderAssignment 'rg-reader-assignment.bicep' = {
 
 output resourceGroupId string = rg.id
 output roleAssignmentId string = rgReaderAssignment.outputs.roleAssignmentId
+

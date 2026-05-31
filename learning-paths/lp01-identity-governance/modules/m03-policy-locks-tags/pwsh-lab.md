@@ -3,7 +3,7 @@
 ## Variables
 ```powershell
 $SUBSCRIPTION_ID="<your-subscription-id>"
-$RG="rg-az104-idgov-dev-eastus2-01"
+$RG="rg-az204-idgov-dev-eastus2-01"
 $PolicyName="require-env-tag-rg"
 $AssignmentName="assign-require-env-tag-audit"
 $Effect="Audit"   # change to Deny for enforcement test in TEST scope
@@ -45,3 +45,4 @@ Get-AzResourceLock -ResourceGroupName $RG | Select Name, LockLevel
 ```powershell
 pwsh -File shared/scripts/pwsh/validation/tag-compliance-report.ps1 -SubscriptionId $SUBSCRIPTION_ID -OutputFolder "./out"
 ```
+

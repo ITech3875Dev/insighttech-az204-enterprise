@@ -6,13 +6,13 @@ param(
   [string]$GroupObjectId,
 
   [Parameter(Mandatory=$true)]
-  [string]$ResourceGroupName = "rg-az104-idgov-dev-eastus2-01",
+  [string]$ResourceGroupName = "rg-az204-idgov-dev-eastus2-01",
 
   [Parameter(Mandatory=$true)]
-  [string]$WorkloadsManagementGroupName = "mg-az104-workloads",
+  [string]$WorkloadsManagementGroupName = "mg-az204-workloads",
 
   [Parameter(Mandatory=$true)]
-  [string]$BudgetName = "az104-lab-budget"
+  [string]$BudgetName = "az204-lab-budget"
 )
 
 $ErrorActionPreference="Stop"
@@ -40,3 +40,4 @@ Run "learning-paths/lp01-identity-governance/modules/m04-cost-advisor-governance
 
 Write-Host "PASS: LP01 validation complete."
 exit 0
+

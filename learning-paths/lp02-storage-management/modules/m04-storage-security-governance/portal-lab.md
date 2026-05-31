@@ -2,7 +2,7 @@
 
 ## Variables
 - Subscription: your lab subscription.
-- Resource group: `rg-az104-storage-dev-eastus2-01`.
+- Resource group: `rg-az204-storage-dev-eastus2-01`.
 - Storage account: `<storage-account-name>`.
 
 ## Task 1 - Baseline secure transfer and protocol settings
@@ -28,3 +28,4 @@
 - Anonymous access is disabled.
 - Networking is restricted to selected networks/IP rules.
 - Encryption settings match design intent.
+

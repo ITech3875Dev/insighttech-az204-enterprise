@@ -4,7 +4,7 @@
 1. Search **Cost Management + Billing**
 2. Select your subscription
 3. Click **Budgets** → **Add**
-4. Name: `az104-lab-budget`
+4. Name: `az204-lab-budget`
 5. Reset period: Monthly
 6. Amount: 100 (or instructor-provided)
 7. Set alert:
@@ -13,7 +13,7 @@
 
 ## Task 2 — Cost analysis
 1. Go to **Cost analysis**
-2. Filter by Resource group: `rg-az104-idgov-dev-eastus2-01`
+2. Filter by Resource group: `rg-az204-idgov-dev-eastus2-01`
 3. Filter by tag `CostCenter=training` (if available)
 4. Capture evidence (screenshot or export)
 
@@ -25,3 +25,4 @@
 ## Verify
 - Budget appears and alerts are configured
 - Cost analysis filters work
+

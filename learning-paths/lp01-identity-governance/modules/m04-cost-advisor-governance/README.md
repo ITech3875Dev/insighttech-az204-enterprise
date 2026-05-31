@@ -16,7 +16,7 @@ You will:
 - Understand resource tagging impact on cost allocation
 - Produce evidence and run validation
 
-See [objectives.md](objectives.md) for full AZ-104 skill mapping.
+See [objectives.md](objectives.md) for full AZ-204 skill mapping.
 
 ## Prerequisites & Permissions
 - **Subscription**: Non-production Azure lab subscription
@@ -43,3 +43,4 @@ See [objectives.md](objectives.md) for full AZ-104 skill mapping.
 - ✅ Advisor recommendations evidenced (query output if none exist)
 - ✅ Validation script returns `PASS`
 - ✅ Post-module knowledge check ≥70%
+

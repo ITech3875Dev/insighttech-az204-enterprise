@@ -20,10 +20,10 @@ Bash / Azure CLI:
 ```bash
 SUBSCRIPTION_ID="<your-subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-compute-dev-eastus2-01"
-PLAN_NAME="asp-az104-compute-dev-01"
+RG_NAME="rg-az204-compute-dev-eastus2-01"
+PLAN_NAME="asp-az204-compute-dev-01"
 PLAN_SKU="B1"
-WEBAPP_NAME="app-az104-compute-dev-01"
+WEBAPP_NAME="app-az204-compute-dev-01"
 RUNTIME="python|3.11"
 ```
 
@@ -32,10 +32,10 @@ PowerShell:
 ```powershell
 $SubscriptionId    = "<your-subscription-id>"
 $Location          = "eastus2"
-$ResourceGroupName = "rg-az104-compute-dev-eastus2-01"
-$PlanName          = "asp-az104-compute-dev-01"
+$ResourceGroupName = "rg-az204-compute-dev-eastus2-01"
+$PlanName          = "asp-az204-compute-dev-01"
 $PlanSku           = "B1"
-$WebAppName        = "app-az104-compute-dev-01"
+$WebAppName        = "app-az204-compute-dev-01"
 $Runtime           = "python|3.11"
 ```
 
@@ -67,7 +67,7 @@ Azure CLI:
 az group create \
   --name "$RG_NAME" \
   --location "$LOCATION" \
-  --tags env=dev project=az104 owner=labuser
+  --tags env=dev project=az204 owner=labuser
 ```
 
 PowerShell:
@@ -76,7 +76,7 @@ PowerShell:
 New-AzResourceGroup `
   -Name $ResourceGroupName `
   -Location $Location `
-  -Tag @{ env = "dev"; project = "az104"; owner = "labuser" }
+  -Tag @{ env = "dev"; project = "az204"; owner = "labuser" }
 ```
 
 Verify:
@@ -150,14 +150,14 @@ Azure CLI:
 az webapp config appsettings set \
   --resource-group "$RG_NAME" \
   --name "$WEBAPP_NAME" \
-  --settings LAB_ENV="beginner" PROJECT="az104" \
+  --settings LAB_ENV="beginner" PROJECT="az204" \
   --output table
 ```
 
 PowerShell:
 
 ```powershell
-$settings = @{ LAB_ENV = "beginner"; PROJECT = "az104" }
+$settings = @{ LAB_ENV = "beginner"; PROJECT = "az204" }
 Set-AzWebApp `
   -ResourceGroupName $ResourceGroupName `
   -Name $WebAppName `
@@ -206,3 +206,4 @@ A passing result confirms the App Service plan and web app exist with the correc
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+

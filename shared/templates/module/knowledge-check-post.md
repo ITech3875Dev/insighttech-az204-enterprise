@@ -65,11 +65,12 @@ If you scored below 70%, focus on:
 
 ---
 
-## Alignment to AZ-104 Exam
-These questions mirror AZ-104 exam question types. Questions that challenge you should be noted for the module-specific practice exam pool (`exams/practice-50q-m01.md`, etc.).
+## Alignment to AZ-204 Exam
+These questions mirror AZ-204 exam question types. Questions that challenge you should be noted for the module-specific practice exam pool (`exams/practice-50q-m01.md`, etc.).
 
 ---
 
 ## Next Steps
 - **Mastery (70%+)?** → Congratulations! Proceed to next module or try integration lab
 - **Below 70%?** → Use remediation paths above; contact instructor if stuck
+

@@ -15,7 +15,7 @@ You will:
 - Build and run Log Analytics queries for operational scenarios
 - Validate alert triggering and triage outcomes
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Query and alert tests include expected trigger/noise behavior
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

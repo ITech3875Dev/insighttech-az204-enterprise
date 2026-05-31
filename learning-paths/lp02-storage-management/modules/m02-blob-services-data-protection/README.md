@@ -15,7 +15,7 @@ You will:
 - Configure SAS and access controls for secure data sharing
 - Validate data protection posture with command evidence
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Access-control tests include allowed and denied scenarios
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

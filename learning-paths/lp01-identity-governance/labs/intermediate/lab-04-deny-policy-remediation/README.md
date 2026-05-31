@@ -26,7 +26,7 @@ Enforce governance with Azure Policy:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-policyrem-dev-eastus2-01"
+RG_NAME="rg-az204-policyrem-dev-eastus2-01"
 LOCATION_ALLOWED="eastus2"
 LOCATION_BLOCKED="westus"
 ```
@@ -156,3 +156,4 @@ Write explanation.md with:
 - Policy does not trigger: verify assignment scope and enforcement mode
 - Deployment passes unexpectedly: confirm you tested blocked location or missing required tag
 - Exemption create fails: verify policy assignment ID and scope are exact matches
+

@@ -23,7 +23,7 @@ A central platform team must govern storage resources in two subscriptions witho
 
 - Subscription A: shared-services (read plus policy audit)
 - Subscription B: workload-storage (limited write in specific RG)
-- Resource group in Subscription B: rg-az104-storage-prod-eastus2-01
+- Resource group in Subscription B: rg-az204-storage-prod-eastus2-01
 
 ## Required Deliverables
 
@@ -50,7 +50,7 @@ Include:
 Define assignments such as:
 
 - storage-governance-auditor: Reader on Subscription A and B.
-- storage-operations-team: Storage Account Contributor on rg-az104-storage-prod-eastus2-01 in Subscription B only.
+- storage-operations-team: Storage Account Contributor on rg-az204-storage-prod-eastus2-01 in Subscription B only.
 - data-access-team: Storage Blob Data Contributor at selected container scope.
 
 ## Step 3 - Policy controls
@@ -88,3 +88,4 @@ In rollback.md include exact steps for removing RBAC and policy assignments.
 - Storage policy controls are assigned and validated.
 - Evidence shows both successful actions and blocked actions.
 - Rollback is complete and executable.
+

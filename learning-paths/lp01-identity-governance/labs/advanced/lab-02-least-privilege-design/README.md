@@ -10,7 +10,7 @@
 Design RBAC for a new application team.
 
 ### Requirements
-- Deploy resources only into: `rg-az104-app-dev-eastus2-01`
+- Deploy resources only into: `rg-az204-app-dev-eastus2-01`
 - View resources across the subscription
 - A small subset can assign roles (only within that RG)
 - No subscription-scope Owner assignments
@@ -48,7 +48,7 @@ CLI examples:
 
 ```bash
 SUB_ID="<subscription-id>"
-APP_RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az104-app-dev-eastus2-01"
+APP_RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az204-app-dev-eastus2-01"
 
 az role assignment create --assignee-object-id "<app-dev-group-id>" --assignee-principal-type Group --role Contributor --scope "$APP_RG_SCOPE"
 az role assignment create --assignee-object-id "<app-viewer-group-id>" --assignee-principal-type Group --role Reader --scope "/subscriptions/$SUB_ID"
@@ -59,7 +59,7 @@ PowerShell examples:
 
 ```powershell
 $SubId = "<subscription-id>"
-$AppRgScope = "/subscriptions/$SubId/resourceGroups/rg-az104-app-dev-eastus2-01"
+$AppRgScope = "/subscriptions/$SubId/resourceGroups/rg-az204-app-dev-eastus2-01"
 
 New-AzRoleAssignment -ObjectId "<app-dev-group-id>" -RoleDefinitionName Contributor -Scope $AppRgScope
 New-AzRoleAssignment -ObjectId "<app-viewer-group-id>" -RoleDefinitionName Reader -Scope "/subscriptions/$SubId"
@@ -107,3 +107,4 @@ az role assignment delete --assignee-object-id "<app-dev-group-id>" --role Contr
 
 ## Reviewer Notes
 A passing submission must be reproducible and auditable. Evidence should make it possible to verify design intent without direct access to the student environment.
+

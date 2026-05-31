@@ -20,9 +20,9 @@ Bash / Azure CLI:
 ```bash
 SUBSCRIPTION_ID="<your-subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-netlb-dev-eastus2-01"
-LB_NAME="lb-az104-netlb-dev-eastus2-01"
-PIP_NAME="pip-lb-az104-netlb-dev-eastus2-01"
+RG_NAME="rg-az204-netlb-dev-eastus2-01"
+LB_NAME="lb-az204-netlb-dev-eastus2-01"
+PIP_NAME="pip-lb-az204-netlb-dev-eastus2-01"
 FRONTEND_IP_CONFIG="lb-frontend-dev"
 BACKEND_POOL="lb-backend-pool-dev"
 HEALTH_PROBE="lb-probe-http-dev"
@@ -34,9 +34,9 @@ PowerShell:
 ```powershell
 $SubscriptionId    = "<your-subscription-id>"
 $Location          = "eastus2"
-$ResourceGroupName = "rg-az104-netlb-dev-eastus2-01"
-$LbName            = "lb-az104-netlb-dev-eastus2-01"
-$PipName           = "pip-lb-az104-netlb-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-netlb-dev-eastus2-01"
+$LbName            = "lb-az204-netlb-dev-eastus2-01"
+$PipName           = "pip-lb-az204-netlb-dev-eastus2-01"
 $FrontendCfg       = "lb-frontend-dev"
 $BackendPool       = "lb-backend-pool-dev"
 $HealthProbe       = "lb-probe-http-dev"
@@ -71,7 +71,7 @@ Azure CLI:
 az group create \
   --name "$RG_NAME" \
   --location "$LOCATION" \
-  --tags env=dev project=az104 owner=labuser
+  --tags env=dev project=az204 owner=labuser
 ```
 
 PowerShell:
@@ -80,7 +80,7 @@ PowerShell:
 New-AzResourceGroup `
   -Name $ResourceGroupName `
   -Location $Location `
-  -Tag @{ env = "dev"; project = "az104"; owner = "labuser" }
+  -Tag @{ env = "dev"; project = "az204"; owner = "labuser" }
 ```
 
 Verify:
@@ -236,3 +236,4 @@ A passing result confirms the load balancer exists with a Standard SKU, a config
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+

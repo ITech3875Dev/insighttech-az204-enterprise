@@ -1,6 +1,6 @@
 # LP02 Practice Exam — 50 Questions (Implement and manage storage in Azure)
 
-**Domain:** Implement and manage storage in Azure (AZ-104)
+**Domain:** Implement and manage storage in Azure (AZ-204)
 **Format:** Mixed (single-choice, multi-select, scenario/troubleshooting)
 **Rules:** Unless stated otherwise, assume least privilege and enterprise naming/tagging guardrails.
 
@@ -322,4 +322,5 @@
    - B. Scheduled validation scripts + artifact retention + exception workflow
    - C. Disable security controls to reduce false positives
    - D. Review only after incidents
+
 

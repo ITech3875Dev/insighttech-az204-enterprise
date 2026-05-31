@@ -4,7 +4,7 @@
 | Item | Details |
 |------|----------|
 | **Duration** | Beginner: ~50 min \| Intermediate: ~55 min \| Advanced: ~75 min |
-| **Prerequisites** | AZ-104 prerequisites recommended |
+| **Prerequisites** | AZ-204 prerequisites recommended |
 | **Difficulty** | All tiers available |
 | **Labs** | Beginner + Intermediate + Advanced alignment |
 
@@ -15,7 +15,7 @@ You will:
 - Configure network access and public endpoint restrictions
 - Validate storage account settings with Portal, CLI, and PowerShell
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Required settings verified (replication, access, networking)
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

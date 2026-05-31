@@ -29,15 +29,15 @@ The platform team manages a storage account for an application that writes raw d
 ```bash
 SUB_ID="<subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-storageops-dev-eastus2-01"
-STORAGE_ACCOUNT="staz104storopsdev01"
+RG_NAME="rg-az204-storageops-dev-eastus2-01"
+STORAGE_ACCOUNT="staz204storopsdev01"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
 $Location = "eastus2"
-$RgName = "rg-az104-storageops-dev-eastus2-01"
-$StorageAccountName = "staz104storopsdev01"
+$RgName = "rg-az204-storageops-dev-eastus2-01"
+$StorageAccountName = "staz204storopsdev01"
 ```
 
 ## Task 1 - Set Context and Create Baseline Resource Group
@@ -238,7 +238,7 @@ Create these files in your branch under this lab folder:
 ### Storage account name already taken
 
 - Cause: storage account names are globally unique
-- Fix: append a random suffix: `staz104stor$(openssl rand -hex 3)dev01`
+- Fix: append a random suffix: `staz204stor$(openssl rand -hex 3)dev01`
 
 ### Tier change fails with `BlobAccessTierNotSupported`
 
@@ -249,3 +249,4 @@ Create these files in your branch under this lab folder:
 
 - Cause: system clock skew or incorrect expiry format
 - Fix: use `date -u` (CLI) or `ToUniversalTime()` (PowerShell) for expiry; wait 30 seconds and retry
+

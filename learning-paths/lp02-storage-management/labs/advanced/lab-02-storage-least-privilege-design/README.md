@@ -42,8 +42,8 @@ In design-assumptions.md document:
 Use these reference scopes:
 
 - Subscription: read-only inventory
-- Resource group: rg-az104-storage-dev-eastus2-01
-- Storage account: staz104blobdev01
+- Resource group: rg-az204-storage-dev-eastus2-01
+- Storage account: staz204blobdev01
 - Container: archive
 
 Suggested matrix entries:
@@ -58,8 +58,8 @@ CLI example:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az104-storage-dev-eastus2-01"
-SA_SCOPE="$RG_SCOPE/providers/Microsoft.Storage/storageAccounts/staz104blobdev01"
+RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az204-storage-dev-eastus2-01"
+SA_SCOPE="$RG_SCOPE/providers/Microsoft.Storage/storageAccounts/staz204blobdev01"
 CONTAINER_SCOPE="$SA_SCOPE/blobServices/default/containers/archive"
 
 az role assignment create --assignee-object-id "<storage-operator-group-id>" --assignee-principal-type Group --role "Storage Account Contributor" --scope "$RG_SCOPE"
@@ -90,3 +90,4 @@ In rollback.md include exact delete commands for each role assignment.
 - Management-plane privileges are constrained to storage RG scope.
 - Validation evidence includes both successful and blocked actions.
 - Submission is reproducible without hidden assumptions.
+

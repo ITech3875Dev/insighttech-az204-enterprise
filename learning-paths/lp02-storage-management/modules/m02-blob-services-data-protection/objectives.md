@@ -1,6 +1,6 @@
 # Objectives
 
-## AZ-104 Skill Mapping
+## AZ-204 Skill Mapping
 - Configure blob containers and access levels
 - Configure lifecycle management policies
 - Configure blob data protection (versioning and soft delete)
@@ -11,3 +11,4 @@
 - Blob versioning and soft delete are enabled
 - Lifecycle policy exists and is enabled
 - SAS generation and secure access checks are documented
+

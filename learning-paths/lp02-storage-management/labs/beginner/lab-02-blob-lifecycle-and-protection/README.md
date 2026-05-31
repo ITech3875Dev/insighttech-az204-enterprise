@@ -8,18 +8,18 @@ Azure CLI:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-storage-dev-eastus2-01"
+RG_NAME="rg-az204-storage-dev-eastus2-01"
 LOCATION="eastus2"
-STORAGE_ACCOUNT="staz104blobdev01"
+STORAGE_ACCOUNT="staz204blobdev01"
 ```
 
 PowerShell:
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-storage-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-storage-dev-eastus2-01"
 $Location = "eastus2"
-$StorageAccountName = "staz104blobdev01"
+$StorageAccountName = "staz204blobdev01"
 ```
 
 ## Task 1 - Create or validate storage baseline
@@ -148,3 +148,4 @@ az storage account management-policy show --account-name "$STORAGE_ACCOUNT" --re
 ```powershell
 pwsh -File learning-paths/lp02-storage-management/modules/m02-blob-services-data-protection/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -StorageAccountName $StorageAccountName
 ```
+

@@ -18,9 +18,9 @@ Application traffic is blocked by network control drift. You must locate and rem
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-network-dev-eastus2-01"
-NSG_NAME="nsg-az104-app-dev-01"
-ROUTE_TABLE="rt-az104-spoke-dev-eus2-01"
+RG_NAME="rg-az204-network-dev-eastus2-01"
+NSG_NAME="nsg-az204-app-dev-01"
+ROUTE_TABLE="rt-az204-spoke-dev-eus2-01"
 TARGET_PORT="443"
 ```
 
@@ -60,3 +60,4 @@ az network nsg show -g "$RG_NAME" -n "$NSG_NAME" -o json > evidence-nsg-after.js
 - Blocking network control is identified and remediated.
 - Connectivity is restored for approved sources only.
 - Evidence and rollback notes are complete.
+

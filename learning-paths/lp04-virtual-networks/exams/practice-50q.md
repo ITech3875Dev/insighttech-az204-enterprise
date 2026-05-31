@@ -1,6 +1,6 @@
 # LP04 Practice Exam - 50 Questions (Configure and manage virtual networks for Azure administrators)
 
-**Domain:** Configure and manage virtual networks for Azure administrators (AZ-104)
+**Domain:** Configure and manage virtual networks for Azure administrators (AZ-204)
 
 ## Questions
 
@@ -254,3 +254,4 @@
    - B. IaC + validation scripts + troubleshooting playbooks
    - C. Disable logging
    - D. Shared admin credentials
+

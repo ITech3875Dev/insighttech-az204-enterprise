@@ -16,8 +16,8 @@ Investigate and tune:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-monitor-dev-eastus2-01"
-ACTION_GROUP_NAME="ag-az104-ops-dev-01"
+RG_NAME="rg-az204-monitor-dev-eastus2-01"
+ACTION_GROUP_NAME="ag-az204-ops-dev-01"
 NOISY_ALERT="cpu-warning-alert"
 CRITICAL_ALERT="cpu-critical-alert"
 ```
@@ -82,4 +82,5 @@ Create:
 - Critical detection path is improved.
 - Action routing is validated.
 - Rollback plan restores prior settings if needed.
+
 

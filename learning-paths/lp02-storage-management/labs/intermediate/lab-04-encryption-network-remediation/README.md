@@ -18,9 +18,9 @@ A storage workload fails compliance checks and cannot be reached from an approve
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-storage-dev-eastus2-01"
-STORAGE_ACCOUNT="staz104blobdev01"
-APPROVED_SUBNET="/subscriptions/<subscription-id>/resourceGroups/rg-az104-network-dev-eastus2-01/providers/Microsoft.Network/virtualNetworks/vnet-az104-spoke-dev-eus2-01/subnets/snet-spoke-app"
+RG_NAME="rg-az204-storage-dev-eastus2-01"
+STORAGE_ACCOUNT="staz204blobdev01"
+APPROVED_SUBNET="/subscriptions/<subscription-id>/resourceGroups/rg-az204-network-dev-eastus2-01/providers/Microsoft.Network/virtualNetworks/vnet-az204-spoke-dev-eus2-01/subnets/snet-spoke-app"
 ```
 
 ## Step 1 - Capture baseline
@@ -61,3 +61,4 @@ az storage account network-rule list -g "$RG_NAME" --account-name "$STORAGE_ACCO
 - Storage encryption and transport requirements are enforced.
 - Public access is restricted and only approved network paths are allowed.
 - Before/after evidence and rollback notes are documented.
+

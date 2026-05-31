@@ -15,7 +15,7 @@ You will:
 - Use Network Watcher tools to troubleshoot connectivity issues
 - Validate network security posture and remediation outcomes
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Troubleshooting findings and remediation actions documented
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

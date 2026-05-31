@@ -17,7 +17,7 @@ You will:
 - Produce a tagging compliance report using shared scripts
 - Apply deny-by-policy pattern in production-like scenarios
 
-See [objectives.md](objectives.md) for full AZ-104 skill mapping.
+See [objectives.md](objectives.md) for full AZ-204 skill mapping.
 
 ## Prerequisites & Permissions
 - **Subscription**: Non-production Azure lab subscription with resource group
@@ -47,3 +47,4 @@ See [objectives.md](objectives.md) for full AZ-104 skill mapping.
 - ✅ Tag compliance report outputs (CSV + JSON)
 - ✅ Validation script returns `PASS`
 - ✅ Post-module knowledge check ≥70%
+

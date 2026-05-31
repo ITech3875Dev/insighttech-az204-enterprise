@@ -1,7 +1,7 @@
 # Enterprise Landing Zone Masterclass - Hub and Spoke (LP06 Capstone Final Project)
 
 ## Purpose
-Build an enterprise-class Azure landing zone (near-MVP) using a hub-and-spoke topology that integrates all AZ-104 learning paths:
+Build an enterprise-class Azure landing zone (near-MVP) using a hub-and-spoke topology that integrates all AZ-204 learning paths:
 - Identity and governance
 - Storage services and protection
 - Compute deployment and operations
@@ -59,7 +59,7 @@ Routing intent:
 
 ## Naming and regions
 - Region: choose one primary region (example: `eastus2`)
-- Prefix pattern: `az104lz-<team>-<env>-<region>-<nn>`
+- Prefix pattern: `az204lz-<team>-<env>-<region>-<nn>`
 - Required tags on all resources:
   - `Environment`
   - `CostCenter`
@@ -132,7 +132,7 @@ Example CLI baseline:
 ```bash
 SUB_ID="<subscription-id>"
 LOC="eastus2"
-PREFIX="az104lz-team1-dev-eus2"
+PREFIX="az204lz-team1-dev-eus2"
 
 az account set --subscription "$SUB_ID"
 az account show -o table
@@ -315,3 +315,4 @@ Capture both successful hub path and blocked internet attempts in logs and evide
 - Require students to justify each allow rule in terms of business need.
 - Penalize broad wildcard allows where a narrower scope is possible.
 - Require proof of rollback-safe changes for security and routing updates.
+

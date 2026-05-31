@@ -1,6 +1,6 @@
 # Objectives
 
-## AZ-104 Skill Mapping
+## AZ-204 Skill Mapping
 - Configure action groups and alert rules
 - Configure metric and log alert thresholds
 - Build Log Analytics queries for incident triage
@@ -11,3 +11,4 @@
 - Alert rule exists with expected scope/condition
 - Query output supports incident investigation scenario
 - Trigger test confirms expected alert action
+

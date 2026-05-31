@@ -3,7 +3,7 @@
 ## Variables
 ```bash
 export SUBSCRIPTION_ID="<your-subscription-id>"
-export BUDGET_NAME="az104-lab-budget"
+export BUDGET_NAME="az204-lab-budget"
 export AMOUNT="100"
 export START_DATE="2026-01-01"
 export END_DATE="2026-12-31"
@@ -25,3 +25,4 @@ az consumption budget show --budget-name "$BUDGET_NAME" -o jsonc
 
 ## Notes
 - Availability depends on billing model and CLI extension maturity; if this fails, use Portal lab and record the error.
+

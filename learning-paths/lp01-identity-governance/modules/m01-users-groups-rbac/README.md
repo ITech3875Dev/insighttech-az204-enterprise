@@ -4,7 +4,7 @@
 | Item | Details |
 |------|----------|
 | **Duration** | Beginner: ~50 min \| Intermediate: ~40 min \| Advanced: ~75 min |
-| **Prerequisites** | AZ-104 Prerequisites module recommended |
+| **Prerequisites** | AZ-204 Prerequisites module recommended |
 | **Difficulty** | All tiers (Beginner: Lab-01; Intermediate: Labs-02; Advanced: N/A in LP01) |
 | **Labs** | 3 hands-on labs (1 Beginner, 2 Intermediate) |
 
@@ -16,7 +16,7 @@ You will:
 - Verify assignments with Portal + Az CLI + PowerShell
 - Run validation to prove completion
 
-See [objectives.md](objectives.md) for full AZ-104 skill mapping.
+See [objectives.md](objectives.md) for full AZ-204 skill mapping.
 
 ## Prerequisites & Permissions
 - **Subscription**: Non-production Azure lab subscription
@@ -47,3 +47,4 @@ See [objectives.md](objectives.md) for full AZ-104 skill mapping.
 - ✅ Validation script returns `PASS`
 - ✅ Post-module knowledge check score ≥70%
 - ✅ All references verified (official Microsoft Learn links)
+

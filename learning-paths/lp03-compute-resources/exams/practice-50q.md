@@ -1,6 +1,6 @@
 # LP03 Practice Exam - 50 Questions (Deploy and manage Azure compute resources)
 
-**Domain:** Deploy and manage Azure compute resources (AZ-104)
+**Domain:** Deploy and manage Azure compute resources (AZ-204)
 
 ## Questions
 
@@ -254,3 +254,4 @@
    - B. IaC + validation scripts + retained evidence
    - C. Disable controls to reduce noise
    - D. Shared credentials
+

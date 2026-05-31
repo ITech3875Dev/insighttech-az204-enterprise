@@ -20,8 +20,8 @@ Bash / Azure CLI:
 ```bash
 SUBSCRIPTION_ID="<your-subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-monitor-dev-eastus2-01"
-WORKSPACE_NAME="law-az104-monitor-dev-01"
+RG_NAME="rg-az204-monitor-dev-eastus2-01"
+WORKSPACE_NAME="law-az204-monitor-dev-01"
 SKU="PerGB2018"
 RETENTION_DAYS=30
 DIAG_SETTING_NAME="diag-activity-to-law"
@@ -32,8 +32,8 @@ PowerShell:
 ```powershell
 $SubscriptionId    = "<your-subscription-id>"
 $Location          = "eastus2"
-$ResourceGroupName = "rg-az104-monitor-dev-eastus2-01"
-$WorkspaceName     = "law-az104-monitor-dev-01"
+$ResourceGroupName = "rg-az204-monitor-dev-eastus2-01"
+$WorkspaceName     = "law-az204-monitor-dev-01"
 $Sku               = "PerGB2018"
 $RetentionDays     = 30
 $DiagSettingName   = "diag-activity-to-law"
@@ -67,7 +67,7 @@ Azure CLI:
 az group create \
   --name "$RG_NAME" \
   --location "$LOCATION" \
-  --tags env=dev project=az104 owner=labuser
+  --tags env=dev project=az204 owner=labuser
 ```
 
 PowerShell:
@@ -76,7 +76,7 @@ PowerShell:
 New-AzResourceGroup `
   -Name $ResourceGroupName `
   -Location $Location `
-  -Tag @{ env = "dev"; project = "az104"; owner = "labuser" }
+  -Tag @{ env = "dev"; project = "az204"; owner = "labuser" }
 ```
 
 Verify:
@@ -192,3 +192,4 @@ A passing result confirms the workspace exists with the correct SKU, retention p
 ```bash
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+

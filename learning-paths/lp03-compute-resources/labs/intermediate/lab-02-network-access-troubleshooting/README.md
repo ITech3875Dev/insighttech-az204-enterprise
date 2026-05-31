@@ -16,16 +16,16 @@ Investigate and isolate whether the issue is caused by:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-compute-dev-eastus2-01"
-VM_NAME="vm-az104-app-dev-01"
+RG_NAME="rg-az204-compute-dev-eastus2-01"
+VM_NAME="vm-az204-app-dev-01"
 TARGET_IP="10.20.1.4"
 TARGET_PORT="443"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-compute-dev-eastus2-01"
-$VmName = "vm-az104-app-dev-01"
+$ResourceGroupName = "rg-az204-compute-dev-eastus2-01"
+$VmName = "vm-az204-app-dev-01"
 $TargetIp = "10.20.1.4"
 $TargetPort = 443
 ```
@@ -64,7 +64,7 @@ Example NSG update:
 ```bash
 az network nsg rule create \
   --resource-group "$RG_NAME" \
-  --nsg-name "nsg-az104-app-dev-01" \
+  --nsg-name "nsg-az204-app-dev-01" \
   --name "Allow-App-443-From-Corp" \
   --priority 200 \
   --direction Inbound \
@@ -87,4 +87,5 @@ az network nsg rule create \
 - Fix is minimal and limited in blast radius.
 - Rollback commands are included and tested.
 - Documentation is reproducible by a reviewer.
+
 

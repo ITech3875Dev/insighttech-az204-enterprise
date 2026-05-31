@@ -3,9 +3,9 @@
 ## Variables
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-storage-dev-eastus2-01"
+RG_NAME="rg-az204-storage-dev-eastus2-01"
 LOC="eastus2"
-SA_NAME="staz104m01$RANDOM$RANDOM"
+SA_NAME="staz204m01$RANDOM$RANDOM"
 ```
 
 ## Task 1 - Resource group
@@ -40,3 +40,4 @@ az storage share-rm create --resource-group "$RG_NAME" --storage-account "$SA_NA
 az storage account show -g "$RG_NAME" -n "$SA_NAME" --query "{name:name,sku:sku.name,kind:kind,httpsOnly:httpsOnly,minTls:minTlsVersion,publicAccess:allowBlobPublicAccess}" -o yaml
 az storage share-rm list -g "$RG_NAME" --storage-account "$SA_NAME" -o table
 ```
+

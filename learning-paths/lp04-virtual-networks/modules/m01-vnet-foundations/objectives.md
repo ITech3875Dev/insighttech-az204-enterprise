@@ -1,6 +1,6 @@
 # Objectives
 
-## AZ-104 Skill Mapping
+## AZ-204 Skill Mapping
 - Configure virtual networks and subnets
 - Design IP address spaces and subnet segmentation
 - Configure DNS settings and resolution behavior for virtual networks
@@ -11,3 +11,4 @@
 - Required subnets exist with expected CIDR ranges
 - DNS server settings are configured and queryable
 - Evidence confirms connectivity between subnets
+

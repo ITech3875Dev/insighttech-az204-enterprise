@@ -6,7 +6,7 @@ param(
   [string]$StorageOperatorsGroupObjectId,
 
   [Parameter(Mandatory=$true)]
-  [string]$ResourceGroupName = "rg-az104-storage-dev-eastus2-01",
+  [string]$ResourceGroupName = "rg-az204-storage-dev-eastus2-01",
 
   [Parameter(Mandatory=$true)]
   [string]$StorageAccountName,
@@ -37,3 +37,4 @@ Run "learning-paths/lp02-storage-management/modules/m04-storage-security-governa
 
 Write-Host "PASS: LP02 validation complete."
 exit 0
+

@@ -3,7 +3,7 @@
 ## Variables
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$RgName = "rg-az104-storage-dev-eastus2-01"
+$RgName = "rg-az204-storage-dev-eastus2-01"
 $StorageAccountName = "<storage-account-name>"
 ```
 
@@ -30,3 +30,4 @@ az storage account blob-service-properties update --account-name $StorageAccount
 Get-AzStorageContainer -Context $ctx | Select-Object Name, PublicAccess
 az storage account blob-service-properties show --account-name $StorageAccountName --resource-group $RgName -o json
 ```
+

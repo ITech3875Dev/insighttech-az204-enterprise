@@ -3,7 +3,7 @@
 ## Variables
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-storage-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-storage-dev-eastus2-01"
 $StorageAccountName = "<storage-account-name>"
 ```
 
@@ -27,3 +27,4 @@ az storage account network-rule list --account-name $StorageAccountName --resour
 ```powershell
 Get-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName | Select-Object StorageAccountName, EnableHttpsTrafficOnly, MinimumTlsVersion, AllowBlobPublicAccess
 ```
+

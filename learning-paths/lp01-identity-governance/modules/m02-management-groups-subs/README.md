@@ -16,7 +16,7 @@ You will:
 - Troubleshoot RBAC scope inheritance across MG→Sub→RG→Resource
 - Validate via Portal + CLI + PowerShell + script
 
-See [objectives.md](objectives.md) for full AZ-104 skill mapping.
+See [objectives.md](objectives.md) for full AZ-204 skill mapping.
 
 ## Prerequisites & Permissions
 - **Subscription**: Non-production Azure lab subscription
@@ -44,3 +44,4 @@ See [objectives.md](objectives.md) for full AZ-104 skill mapping.
 - ✅ RBAC inheritance verified at MG scope
 - ✅ Validation script returns `PASS`
 - ✅ Post-module knowledge check ≥70%
+

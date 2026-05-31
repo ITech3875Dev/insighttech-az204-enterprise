@@ -12,9 +12,10 @@
 Run:
 ```powershell
 $SUBSCRIPTION_ID="<your-subscription-id>"
-$RG_NAME="rg-az104-idgov-dev-eastus2-01"
+$RG_NAME="rg-az204-idgov-dev-eastus2-01"
 
 pwsh -File learning-paths/lp01-identity-governance/modules/m03-policy-locks-tags/validation/validate.ps1 `
   -SubscriptionId $SUBSCRIPTION_ID `
   -ResourceGroupName $RG_NAME
 ```
+

@@ -25,7 +25,7 @@
         "Owner": "student01",
         "CostCenter": "training",
         "Environment": "dev",
-        "Workload": "az104",
+        "Workload": "az204",
         "DataClass": "training",
         "ExpirationDate": "2026-12-31"
       }

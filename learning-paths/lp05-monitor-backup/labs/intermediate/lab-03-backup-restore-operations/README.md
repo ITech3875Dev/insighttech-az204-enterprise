@@ -19,8 +19,8 @@ A critical workload lost data after an operator error. You must verify backup re
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-monitor-dev-eastus2-01"
-VAULT_NAME="rsv-az104-ops-dev-01"
+RG_NAME="rg-az204-monitor-dev-eastus2-01"
+VAULT_NAME="rsv-az204-ops-dev-01"
 PROTECTED_ITEM_NAME="<protected-item-name>"
 ```
 
@@ -65,3 +65,4 @@ Create:
 - Backup and recovery points are verified with evidence.
 - One restore path is validated end-to-end.
 - Documentation covers rollback and post-restore verification.
+

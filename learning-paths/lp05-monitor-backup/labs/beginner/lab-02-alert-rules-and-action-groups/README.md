@@ -7,9 +7,9 @@ Goal: configure a reusable action group and attach it to a metric alert so monit
 ### Azure CLI
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-monitor-dev-eastus2-01"
+RG_NAME="rg-az204-monitor-dev-eastus2-01"
 LOCATION="eastus2"
-ACTION_GROUP_NAME="ag-az104-ops-dev-01"
+ACTION_GROUP_NAME="ag-az204-ops-dev-01"
 ALERT_RULE_NAME="cpu-high-vm-alert"
 TARGET_RESOURCE_ID="<vm-resource-id>"
 EMAIL_RECEIVER="ops-team@example.com"
@@ -18,9 +18,9 @@ EMAIL_RECEIVER="ops-team@example.com"
 ### PowerShell
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-monitor-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-monitor-dev-eastus2-01"
 $Location = "eastus2"
-$ActionGroupName = "ag-az104-ops-dev-01"
+$ActionGroupName = "ag-az204-ops-dev-01"
 $AlertRuleName = "cpu-high-vm-alert"
 $TargetResourceId = "<vm-resource-id>"
 $EmailReceiver = "ops-team@example.com"
@@ -67,3 +67,4 @@ az monitor metrics alert show -g "$RG_NAME" -n "$ALERT_RULE_NAME" -o json
 ```powershell
 pwsh -File learning-paths/lp05-monitor-backup/modules/m02-alerting-and-log-analytics/validation/validate.ps1 -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -ActionGroupName $ActionGroupName
 ```
+

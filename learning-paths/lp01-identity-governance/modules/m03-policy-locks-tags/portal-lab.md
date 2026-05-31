@@ -3,14 +3,14 @@
 ## Variables
 - Subscription: your lab subscription
 - Region allowed: East US 2
-- Target RG: `rg-az104-idgov-dev-eastus2-01` (from M01)
+- Target RG: `rg-az204-idgov-dev-eastus2-01` (from M01)
 
 ---
 
 ## Task 1 — Assign “require tags” policy (Audit first)
 1. Search **Policy**
 2. Click **Assignments** → **Assign policy**
-3. Scope: your subscription (or `mg-az104-workloads` if using MG)
+3. Scope: your subscription (or `mg-az204-workloads` if using MG)
 4. Policy definition: search for **Require a tag on resources** (or resource groups)
 5. Parameters:
    - Tag Name: `Environment`
@@ -33,7 +33,7 @@
 3. Attempt to create a resource in another region → confirm denial
 
 ## Task 5 — Apply CanNotDelete lock to shared RG
-1. Open RG `rg-az104-idgov-dev-eastus2-01`
+1. Open RG `rg-az204-idgov-dev-eastus2-01`
 2. **Locks** → **Add**
 3. Name: `lock-rg-cannotdelete`
 4. Type: **CanNotDelete**
@@ -46,3 +46,4 @@
 ## Verify
 - Policy assignments exist at expected scope(s)
 - Lock prevents deletion attempts
+

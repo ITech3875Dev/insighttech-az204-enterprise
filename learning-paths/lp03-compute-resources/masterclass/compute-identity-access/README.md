@@ -128,4 +128,5 @@ az ad app federated-credential list --id "<app-object-id>" -o table
   - verify active context before every critical step
 
 ## Alignment Notes
-This track strengthens AZ-104 identity/governance readiness while reflecting current enterprise patterns for passwordless automation.
+This track strengthens AZ-204 identity/governance readiness while reflecting current enterprise patterns for passwordless automation.
+

@@ -15,7 +15,7 @@ You will:
 - Execute backup and restore operations in controlled scenarios
 - Validate recovery point and restore outcomes with evidence
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Restore and recovery validation documented with outcomes
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

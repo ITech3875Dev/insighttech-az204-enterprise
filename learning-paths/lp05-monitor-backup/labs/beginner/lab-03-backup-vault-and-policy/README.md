@@ -20,11 +20,11 @@ Bash / Azure CLI:
 ```bash
 SUBSCRIPTION_ID="<your-subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-backup-dev-eastus2-01"
-VAULT_NAME="rsv-az104-backup-dev-eastus2-01"
+RG_NAME="rg-az204-backup-dev-eastus2-01"
+VAULT_NAME="rsv-az204-backup-dev-eastus2-01"
 POLICY_NAME="pol-daily-backup-dev"
-VM_RG_NAME="rg-az104-compute-dev-eastus2-01"
-VM_NAME="vm-az104-compute-dev-01"
+VM_RG_NAME="rg-az204-compute-dev-eastus2-01"
+VM_NAME="vm-az204-compute-dev-01"
 ```
 
 PowerShell:
@@ -32,11 +32,11 @@ PowerShell:
 ```powershell
 $SubscriptionId    = "<your-subscription-id>"
 $Location          = "eastus2"
-$ResourceGroupName = "rg-az104-backup-dev-eastus2-01"
-$VaultName         = "rsv-az104-backup-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-backup-dev-eastus2-01"
+$VaultName         = "rsv-az204-backup-dev-eastus2-01"
 $PolicyName        = "pol-daily-backup-dev"
-$VmRgName          = "rg-az104-compute-dev-eastus2-01"
-$VmName            = "vm-az104-compute-dev-01"
+$VmRgName          = "rg-az204-compute-dev-eastus2-01"
+$VmName            = "vm-az204-compute-dev-01"
 ```
 
 ---
@@ -67,7 +67,7 @@ Azure CLI:
 az group create \
   --name "$RG_NAME" \
   --location "$LOCATION" \
-  --tags env=dev project=az104 owner=labuser
+  --tags env=dev project=az204 owner=labuser
 ```
 
 PowerShell:
@@ -76,7 +76,7 @@ PowerShell:
 New-AzResourceGroup `
   -Name $ResourceGroupName `
   -Location $Location `
-  -Tag @{ env = "dev"; project = "az104"; owner = "labuser" }
+  -Tag @{ env = "dev"; project = "az204"; owner = "labuser" }
 ```
 
 Verify:
@@ -239,3 +239,4 @@ az backup protection disable \
 
 az group delete --name "$RG_NAME" --yes --no-wait
 ```
+

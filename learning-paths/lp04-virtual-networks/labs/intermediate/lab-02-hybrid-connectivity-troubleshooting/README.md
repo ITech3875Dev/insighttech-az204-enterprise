@@ -16,9 +16,9 @@ Investigate potential causes across:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-network-dev-eastus2-01"
+RG_NAME="rg-az204-network-dev-eastus2-01"
 CONNECTION_NAME="conn-branch-to-hub"
-GW_NAME="vpngw-az104-hub-dev-01"
+GW_NAME="vpngw-az204-hub-dev-01"
 ```
 
 ## Step 1 - Gather current-state evidence
@@ -75,4 +75,5 @@ Produce:
 - Fix preserves least privilege and controlled routing.
 - Rollback is complete and executable.
 - Reviewer can reproduce the troubleshooting sequence.
+
 

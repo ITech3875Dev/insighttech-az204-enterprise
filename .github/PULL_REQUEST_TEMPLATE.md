@@ -6,7 +6,7 @@
 - [ ] Docs / standards
 
 ## Skill coverage
-List the AZ-104 objective(s) this change supports.
+List the AZ-204 objective(s) this change supports.
 
 ## Evidence
 - Validation output (paste)
@@ -21,3 +21,4 @@ What could break? How to revert?
 - [ ] References are official
 - [ ] Module follows template structure
 - [ ] CI passed
+

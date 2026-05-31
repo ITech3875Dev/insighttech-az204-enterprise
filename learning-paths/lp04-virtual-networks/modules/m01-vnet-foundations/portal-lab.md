@@ -5,11 +5,11 @@ Deploy a storage account baseline with secure defaults and governance-ready conf
 
 ## Task 1 - Set subscription and create resource group
 1. Switch to your assigned subscription.
-2. Create `rg-az104-storage-dev-eastus2-01` in East US 2.
+2. Create `rg-az204-storage-dev-eastus2-01` in East US 2.
 3. Apply required tags: Owner, CostCenter, Environment, Workload, DataClass, ExpirationDate.
 
 ## Task 2 - Create storage account
-1. Create storage account `staz104m01<unique>`.
+1. Create storage account `staz204m01<unique>`.
 2. Performance: Standard.
 3. Redundancy: Standard_LRS.
 4. Secure transfer required: Enabled.
@@ -30,3 +30,4 @@ Deploy a storage account baseline with secure defaults and governance-ready conf
 - Storage name unavailable: choose a globally unique value.
 - Missing setting in portal: confirm account kind is StorageV2.
 - Authorization errors: verify RBAC role on RG scope.
+

@@ -15,7 +15,7 @@ You will:
 - Implement governance checks for secure storage posture
 - Validate security controls and produce remediation guidance
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Governance findings and remediation steps documented
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

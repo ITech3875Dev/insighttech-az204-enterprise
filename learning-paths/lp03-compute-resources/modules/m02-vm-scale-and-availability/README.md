@@ -15,7 +15,7 @@ You will:
 - Apply availability zones/sets and load-balancing patterns
 - Validate scale and resilience behavior with command evidence
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Scale behavior tests include expected increase/decrease scenarios
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

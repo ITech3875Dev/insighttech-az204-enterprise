@@ -23,8 +23,8 @@ Operations must monitor and recover workloads across multiple subscriptions whil
 
 - Subscription A: platform-observability
 - Subscription B: workload-observability
-- Resource group in Subscription B: rg-az104-monitor-prod-eastus2-01
-- Recovery Services vault: rsv-az104-ops-prod-01
+- Resource group in Subscription B: rg-az204-monitor-prod-eastus2-01
+- Recovery Services vault: rsv-az204-ops-prod-01
 
 ## Required Deliverables
 
@@ -86,3 +86,4 @@ Provide rollback steps for RBAC and policy assignments.
 - Governance controls are assigned and validated.
 - Validation includes both permitted and blocked actions.
 - Documentation is complete, auditable, and reproducible.
+

@@ -3,7 +3,7 @@
 ## Variables
 ```bash
 export SUBSCRIPTION_ID="<subscription-id>"
-export RG="rg-az104-storage-dev-eastus2-01"
+export RG="rg-az204-storage-dev-eastus2-01"
 export STORAGE_ACCOUNT="<storage-account-name>"
 export SRC_SHARE="profiles"
 export DST_SHARE="teamdocs"
@@ -40,3 +40,4 @@ azcopy copy "https://${STORAGE_ACCOUNT}.file.core.windows.net/${SRC_SHARE}?${SRC
 az storage file list --account-name "$STORAGE_ACCOUNT" --share-name "$SRC_SHARE" --auth-mode login -o table
 az storage file list --account-name "$STORAGE_ACCOUNT" --share-name "$DST_SHARE" --auth-mode login -o table
 ```
+

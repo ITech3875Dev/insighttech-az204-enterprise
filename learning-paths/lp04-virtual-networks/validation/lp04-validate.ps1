@@ -3,7 +3,7 @@ param(
   [string]$SubscriptionId,
 
   [Parameter(Mandatory=$true)]
-  [string]$ResourceGroupName = "rg-az104-network-dev-eastus2-01",
+  [string]$ResourceGroupName = "rg-az204-network-dev-eastus2-01",
 
   [Parameter(Mandatory=$true)]
   [string]$VnetName,
@@ -43,3 +43,4 @@ Run "learning-paths/lp04-virtual-networks/modules/m04-network-security-and-troub
 
 Write-Host "PASS: LP04 validation complete."
 exit 0
+

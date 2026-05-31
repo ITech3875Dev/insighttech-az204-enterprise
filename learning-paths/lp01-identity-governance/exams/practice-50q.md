@@ -1,6 +1,6 @@
 # LP01 Practice Exam — 50 Questions (Identity & Governance)
 
-**Domain:** Manage Azure Identities & Governance (AZ-104)  
+**Domain:** Manage Azure Identities & Governance (AZ-204)  
 **Format:** Mixed (single-choice, multi-select, scenario/troubleshooting)  
 **Rules:** Unless stated otherwise, assume **least privilege** and **enterprise guardrails** (naming/tags, scope discipline).
 
@@ -326,4 +326,5 @@
    - B. Reader role on the RG
    - C. Budget at subscription scope
    - D. Policy Audit
+
 

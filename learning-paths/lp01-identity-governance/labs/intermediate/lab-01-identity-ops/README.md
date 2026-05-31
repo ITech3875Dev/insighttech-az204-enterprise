@@ -25,17 +25,17 @@ Use these values in all steps.
 ```bash
 SUB_ID="<subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-idops-dev-eastus2-01"
-OPS_GROUP_NAME="az104-idops-rg-contributors"
-READER_GROUP_NAME="az104-idops-rg-readers"
+RG_NAME="rg-az204-idops-dev-eastus2-01"
+OPS_GROUP_NAME="az204-idops-rg-contributors"
+READER_GROUP_NAME="az204-idops-rg-readers"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
 $Location = "eastus2"
-$RgName = "rg-az104-idops-dev-eastus2-01"
-$OpsGroupName = "az104-idops-rg-contributors"
-$ReaderGroupName = "az104-idops-rg-readers"
+$RgName = "rg-az204-idops-dev-eastus2-01"
+$OpsGroupName = "az204-idops-rg-contributors"
+$ReaderGroupName = "az204-idops-rg-readers"
 ```
 
 ## Task 1 - Set Context and Create Baseline Resource Group
@@ -155,3 +155,4 @@ Create these files in your branch under this lab folder:
 ### Role assignment appears delayed
 - Cause: RBAC propagation delay
 - Fix: wait 5 to 10 minutes and retry query
+

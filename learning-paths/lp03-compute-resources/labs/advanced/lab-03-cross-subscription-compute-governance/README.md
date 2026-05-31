@@ -23,7 +23,7 @@ Compute workloads are distributed across platform and application subscriptions.
 
 - Subscription A: platform-compute-shared
 - Subscription B: app-compute-prod
-- Resource group in Subscription B: rg-az104-compute-prod-eastus2-01
+- Resource group in Subscription B: rg-az204-compute-prod-eastus2-01
 
 ## Required Deliverables
 
@@ -48,7 +48,7 @@ Document personas:
 Define assignments:
 
 - Reader on both subscriptions for compute-auditor.
-- Virtual Machine Contributor on rg-az104-compute-prod-eastus2-01 for vm-operator.
+- Virtual Machine Contributor on rg-az204-compute-prod-eastus2-01 for vm-operator.
 - Contributor at VMSS resource scope only for vmss-operator.
 
 Explicitly prohibit subscription-level Owner assignments.
@@ -89,3 +89,4 @@ Provide full rollback for RBAC and policy assignments.
 - Policy controls are active and validated.
 - Both allowed and denied tests are evidenced.
 - Documentation is review-ready and reproducible.
+

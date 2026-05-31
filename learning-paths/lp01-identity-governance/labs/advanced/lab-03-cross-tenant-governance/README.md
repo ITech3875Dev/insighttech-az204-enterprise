@@ -319,8 +319,9 @@ After completing this lab, you:
 - ✅ Can implement guest user access with RBAC
 - ✅ Know how to implement break-glass emergency procedures
 - ✅ Are ready for MSP/managed services roles
-- ✅ Can tackle advanced AZ-104 identity scenarios
+- ✅ Can tackle advanced AZ-204 identity scenarios
 
 ---
 
 **Submission**: Push all task files to Git branch `lp01-advanced-crosstenant-{yourname}`, open PR for instructor review.
+

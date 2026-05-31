@@ -218,7 +218,7 @@ This capstone lab **synthesizes all four LP01 modules** (M01–M04) into one int
 ## Next Steps After Capstone
 
 After completing LP01 capstone, you are eligible to:
-- ✅ Attempt **AZ-104 practice exam** (50 questions)
+- ✅ Attempt **AZ-204 practice exam** (50 questions)
 - ✅ Begin **LP02** (Networking) if available
 - ✅ Present governance architecture to your team (great resume addendum!)
 
@@ -230,3 +230,4 @@ After completing LP01 capstone, you are eligible to:
 - **Shared scripts**: [tag-compliance-report.ps1](../../../shared/scripts/pwsh/validation/tag-compliance-report.ps1), [tag-compliance-report.sh](../../../shared/scripts/cli/validation/tag-compliance-report.sh)
 - **Bicep modules**: [shared/bicep/modules/](../../../shared/bicep/modules/)
 - **Office hours**: Schedule 1:1 with instructor if stuck on Part D (break-glass) or Part C (cost data visibility)
+

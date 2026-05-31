@@ -15,7 +15,7 @@ You will:
 - Implement monitoring and alerting for compute availability and health
 - Validate security and operational controls with remediation evidence
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Monitoring, alerting, and recovery findings documented
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

@@ -4,7 +4,7 @@
 ```bash
 export SUBSCRIPTION_ID="<your-subscription-id>"
 export LOCATION="eastus2"
-export RG="rg-az104-idgov-dev-eastus2-01"
+export RG="rg-az204-idgov-dev-eastus2-01"
 export POLICY_NAME="require-env-tag-rg"
 export ASSIGN_NAME="assign-require-env-tag-audit"
 export EFFECT="Audit"   # change to Deny for enforcement test in a TEST scope
@@ -44,3 +44,4 @@ az lock list --resource-group "$RG" -o table
 chmod +x shared/scripts/cli/validation/tag-compliance-report.sh
 shared/scripts/cli/validation/tag-compliance-report.sh "$SUBSCRIPTION_ID" "./out"
 ```
+

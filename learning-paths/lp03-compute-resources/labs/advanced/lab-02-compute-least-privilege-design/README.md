@@ -43,8 +43,8 @@ In design-assumptions.md define:
 Use these boundaries:
 
 - Subscription: read-only inventory
-- Resource group: rg-az104-compute-dev-eastus2-01
-- VMSS: vmss-az104-web-dev-01
+- Resource group: rg-az204-compute-dev-eastus2-01
+- VMSS: vmss-az204-web-dev-01
 
 Reference assignments:
 
@@ -58,8 +58,8 @@ CLI example:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az104-compute-dev-eastus2-01"
-VMSS_SCOPE="$RG_SCOPE/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-az104-web-dev-01"
+RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az204-compute-dev-eastus2-01"
+VMSS_SCOPE="$RG_SCOPE/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-az204-web-dev-01"
 
 az role assignment create --assignee-object-id "<vm-ops-group-id>" --assignee-principal-type Group --role "Virtual Machine Contributor" --scope "$RG_SCOPE"
 az role assignment create --assignee-object-id "<vmss-ops-group-id>" --assignee-principal-type Group --role Contributor --scope "$VMSS_SCOPE"
@@ -89,3 +89,4 @@ Provide rollback commands removing all assignments in reverse order.
 - No broad write role exists at subscription level.
 - Both allowed and denied test evidence is complete and consistent.
 - Role model is operationally practical for day-2 support.
+

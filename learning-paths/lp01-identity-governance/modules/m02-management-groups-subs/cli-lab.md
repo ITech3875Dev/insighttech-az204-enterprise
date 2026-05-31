@@ -3,11 +3,11 @@
 ## Variables
 ```bash
 export SUBSCRIPTION_ID="<your-subscription-id>"
-export MG_ROOT="mg-az104-root"
-export MG_PLATFORM="mg-az104-platform"
-export MG_WORKLOADS="mg-az104-workloads"
-export MG_SANDBOX="mg-az104-sandbox"
-export GROUP_OBJECT_ID="<entra-group-object-id>"   # az104-rbac-readers
+export MG_ROOT="mg-az204-root"
+export MG_PLATFORM="mg-az204-platform"
+export MG_WORKLOADS="mg-az204-workloads"
+export MG_SANDBOX="mg-az204-sandbox"
+export GROUP_OBJECT_ID="<entra-group-object-id>"   # az204-rbac-readers
 ```
 
 ## Task 1 — Create management groups (if permitted)
@@ -21,7 +21,7 @@ az account management-group create --name "$MG_WORKLOADS" --parent "$MG_ROOT"
 az account management-group create --name "$MG_SANDBOX" --parent "$MG_ROOT"
 ```
 
-## Task 2 — Move subscription into mg-az104-workloads
+## Task 2 — Move subscription into mg-az204-workloads
 ```bash
 az account management-group subscription add --name "$MG_WORKLOADS" --subscription "$SUBSCRIPTION_ID"
 ```
@@ -38,3 +38,4 @@ az role assignment create   --assignee-object-id "$GROUP_OBJECT_ID"   --assignee
 az account management-group show --name "$MG_WORKLOADS" -o jsonc
 az role assignment list --scope "$MG_SCOPE" -o table
 ```
+

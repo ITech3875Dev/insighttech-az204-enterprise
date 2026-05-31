@@ -15,7 +15,7 @@ You will:
 - Evaluate hybrid connectivity options (VPN Gateway/ExpressRoute concepts)
 - Validate effective route behavior and connectivity outcomes
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Route behavior tests include expected path/next-hop outcomes
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

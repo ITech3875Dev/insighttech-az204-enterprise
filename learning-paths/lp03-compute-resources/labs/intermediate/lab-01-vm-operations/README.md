@@ -30,17 +30,17 @@ The platform team operates a fleet of dev VMs. You must:
 ```bash
 SUB_ID="<subscription-id>"
 LOCATION="eastus2"
-RG_NAME="rg-az104-vmops-dev-eastus2-01"
-VM_NAME="vm-az104-vmops-dev-01"
-DISK_NAME="disk-az104-vmops-data-01"
+RG_NAME="rg-az204-vmops-dev-eastus2-01"
+VM_NAME="vm-az204-vmops-dev-01"
+DISK_NAME="disk-az204-vmops-data-01"
 ```
 
 ```powershell
 $SubscriptionId = "<subscription-id>"
 $Location = "eastus2"
-$RgName = "rg-az104-vmops-dev-eastus2-01"
-$VmName = "vm-az104-vmops-dev-01"
-$DiskName = "disk-az104-vmops-data-01"
+$RgName = "rg-az204-vmops-dev-eastus2-01"
+$VmName = "vm-az204-vmops-dev-01"
+$DiskName = "disk-az204-vmops-data-01"
 ```
 
 ## Task 1 - Set Context and Create Baseline Resource Group
@@ -215,3 +215,4 @@ Create these files in your branch under this lab folder:
 
 - Cause: Azure guest agent not responding
 - Fix: use `az vm restart` or wait 5 minutes; force-power-off only as a last resort
+

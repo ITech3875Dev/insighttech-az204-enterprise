@@ -42,9 +42,9 @@ Document:
 
 Use scopes:
 
-- Resource group: rg-az104-network-dev-eastus2-01
-- Hub VNet: vnet-az104-hub-dev-eus2-01
-- Spoke VNet: vnet-az104-spoke-dev-eus2-01
+- Resource group: rg-az204-network-dev-eastus2-01
+- Hub VNet: vnet-az204-hub-dev-eus2-01
+- Spoke VNet: vnet-az204-spoke-dev-eus2-01
 
 Suggested assignments:
 
@@ -58,9 +58,9 @@ CLI example:
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az104-network-dev-eastus2-01"
-HUB_SCOPE="$RG_SCOPE/providers/Microsoft.Network/virtualNetworks/vnet-az104-hub-dev-eus2-01"
-SPOKE_SCOPE="$RG_SCOPE/providers/Microsoft.Network/virtualNetworks/vnet-az104-spoke-dev-eus2-01"
+RG_SCOPE="/subscriptions/$SUB_ID/resourceGroups/rg-az204-network-dev-eastus2-01"
+HUB_SCOPE="$RG_SCOPE/providers/Microsoft.Network/virtualNetworks/vnet-az204-hub-dev-eus2-01"
+SPOKE_SCOPE="$RG_SCOPE/providers/Microsoft.Network/virtualNetworks/vnet-az204-spoke-dev-eus2-01"
 
 az role assignment create --assignee-object-id "<network-ops-group-id>" --assignee-principal-type Group --role "Network Contributor" --scope "$RG_SCOPE"
 az role assignment create --assignee-object-id "<peering-ops-group-id>" --assignee-principal-type Group --role "Network Contributor" --scope "$HUB_SCOPE"
@@ -91,3 +91,4 @@ Provide rollback commands for each assignment.
 - Read-only auditing remains broad without write permissions.
 - Denied tests prove protection boundaries.
 - Evidence is sufficient for peer review.
+

@@ -15,7 +15,7 @@ You will:
 - Deploy and manage Azure Container Instances for workload tasks
 - Validate compute platform behavior and deployment outcomes with evidence
 
-See [objectives.md](objectives.md) for AZ-104 mapping.
+See [objectives.md](objectives.md) for AZ-204 mapping.
 
 ## Prerequisites & Permissions
 - Non-production lab subscription
@@ -37,3 +37,4 @@ See [objectives.md](objectives.md) for AZ-104 mapping.
 - Scale/deployment operations documented with outcomes
 - Validation script returns `PASS`
 - References are official Microsoft Learn/Docs
+

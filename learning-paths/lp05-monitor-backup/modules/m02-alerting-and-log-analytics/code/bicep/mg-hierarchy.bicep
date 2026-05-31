@@ -1,13 +1,13 @@
 targetScope = 'tenant'
 
 @description('Root management group name.')
-param rootMgName string = 'mg-az104-root'
+param rootMgName string = 'mg-az204-root'
 
 @description('Child management groups.')
 param childMgs array = [
-  'mg-az104-platform'
-  'mg-az104-workloads'
-  'mg-az104-sandbox'
+  'mg-az204-platform'
+  'mg-az204-workloads'
+  'mg-az204-sandbox'
 ]
 
 resource root 'Microsoft.Management/managementGroups@2021-04-01' = {
@@ -24,3 +24,4 @@ resource children 'Microsoft.Management/managementGroups@2021-04-01' = [for mg i
     }
   }
 }]
+

@@ -1,7 +1,7 @@
 # AZ-204 Taxonomy and Migration Map
 
 ## Objective
-Define the active AZ-204 learning path structure and show how the existing AZ-104 source material can be reused during migration.
+Define the active AZ-204 learning path structure and show how the existing AZ-204 source material can be reused during migration.
 
 ## Target Learning Paths
 
@@ -42,7 +42,7 @@ Define the active AZ-204 learning path structure and show how the existing AZ-10
 | `lp04-virtual-networks` | service connectivity, private endpoints, network troubleshooting where app-relevant |
 
 ## Migration Rules
-- Treat the AZ-104 folders as source material, not as the final AZ-204 taxonomy
+- Treat the AZ-204 folders as source material, not as the final AZ-204 taxonomy
 - Keep new AZ-204 learning paths isolated under `learning-paths/az204-*`
 - Rewrite administrator-centric language into developer and application scenarios
 - Prefer lab flows that validate application behavior, not just resource creation
@@ -51,3 +51,4 @@ Define the active AZ-204 learning path structure and show how the existing AZ-10
 - LP01 is scaffolded
 - LP02 is scaffolded
 - LP03 through LP05 are planned but not yet scaffolded
+

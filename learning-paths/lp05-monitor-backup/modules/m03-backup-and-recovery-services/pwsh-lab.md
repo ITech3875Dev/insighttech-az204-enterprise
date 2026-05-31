@@ -3,9 +3,9 @@
 ## Variables
 ```powershell
 $SubscriptionId = "<subscription-id>"
-$ResourceGroupName = "rg-az104-storage-dev-eastus2-01"
+$ResourceGroupName = "rg-az204-storage-dev-eastus2-01"
 $StorageAccountName = "<storage-account-name>"
-$SyncServiceName = "stsync-az104-eastus2-01"
+$SyncServiceName = "stsync-az204-eastus2-01"
 ```
 
 ## Task 1 - Context and file shares
@@ -36,3 +36,4 @@ az storagesync create --resource-group $ResourceGroupName --name $SyncServiceNam
 Get-AzStorageShare -Context $ctx | Select-Object Name, Quota
 az storagesync list --resource-group $ResourceGroupName -o table
 ```
+

@@ -19,10 +19,10 @@ Traffic between hub and spoke VNets is inconsistent after multiple change window
 
 ```bash
 SUB_ID="<subscription-id>"
-RG_NAME="rg-az104-network-dev-eastus2-01"
-HUB_VNET="vnet-az104-hub-dev-eus2-01"
-SPOKE_VNET="vnet-az104-spoke-dev-eus2-01"
-ROUTE_TABLE="rt-az104-spoke-dev-eus2-01"
+RG_NAME="rg-az204-network-dev-eastus2-01"
+HUB_VNET="vnet-az204-hub-dev-eus2-01"
+SPOKE_VNET="vnet-az204-spoke-dev-eus2-01"
+ROUTE_TABLE="rt-az204-spoke-dev-eus2-01"
 ```
 
 ## Step 1 - Capture baseline evidence
@@ -75,3 +75,4 @@ Create:
 - Before/after evidence demonstrates corrected route behavior.
 - Peering and route updates are minimal and controlled.
 - Rollback steps are included and testable.
+
