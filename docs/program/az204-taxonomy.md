@@ -1,7 +1,7 @@
 # AZ-204 Taxonomy and Migration Map
 
 ## Objective
-Define the active AZ-204 learning path structure and show how the existing AZ-204 source material can be reused during migration.
+Define the active AZ-204 learning path structure and show how the existing legacy AZ-104 source material can be reused during migration.
 
 ## Target Learning Paths
 
@@ -52,5 +52,6 @@ Define the active AZ-204 learning path structure and show how the existing AZ-20
 - LP02 is production-ready
 - LP03 is production-ready
 - LP04 and LP05 are planned
+
 
 
